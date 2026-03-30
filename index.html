@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gemm — Hero Option 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" defer crossorigin="anonymous"></script>
+    <script src="/assets/animations/scanner-data.js" defer></script>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <div class="logo">gemm</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact-support">Contact / Support</a>
+            <a href="https://my.gemm.app" class="btn-nav" target="_blank" rel="noopener noreferrer">Join Now/Sign In</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-copy">
+            <h1>Creator payouts on autopilot</h1>
+            <div class="hero-actions">
+                <a href="https://calendly.com/gemm-info/30min" class="btn-hero" target="_blank" rel="noopener noreferrer">Book a demo</a>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <div class="hero-prism-wrap" aria-hidden="true">
+                <video class="hero-prism-video" autoplay loop muted playsinline preload="metadata">
+                    <source src="https://pub-60f0431cd7c14788920e5ab408ae1c71.r2.dev/hero-banner.webm" type="video/webm">
+                    <source src="https://pub-60f0431cd7c14788920e5ab408ae1c71.r2.dev/hero-banner.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <div class="brands" aria-label="Customer logos">
+        <div class="brands-track">
+            <div class="brands-group" aria-hidden="false">
+                <div class="brand-logo brand-starline">
+                    <img src="/assets/images/Starline management 1.png" alt="Starline Management" loading="lazy" decoding="async">
+                </div>
+                <div class="brand-logo brand-reach">
+                    <img src="/assets/images/Reach.png" alt="Reach" loading="lazy" decoding="async">
+                </div>
+                <div class="brand-logo brand-greenwood">
+                    <img src="/assets/images/Greenwood Management.png.avif" alt="Greenwood Management" loading="lazy" decoding="async">
+                </div>
+                <div class="brand-logo brand-vortex">
+                    <img src="/assets/images/Vortex.png" alt="Vortex" loading="lazy" decoding="async">
+                </div>
+                <div class="brand-logo brand-coco">
+                    <img src="/assets/images/Coco Butter.png" alt="Coco Butter" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <div class="brands-group" aria-hidden="true">
+                <div class="brand-logo brand-starline">
+                    <img src="/assets/images/Starline management 1.png" alt="" loading="lazy" decoding="async">
+                </div>
+                <div class="brand-logo brand-reach">
+                    <img src="/assets/images/Reach.png" alt="" loading="lazy" decoding="async">
+                </div>
+                <div class="brand-logo brand-greenwood">
+                    <img src="/assets/images/Greenwood Management.png.avif" alt="" loading="lazy" decoding="async">
+                </div>
+                <div class="brand-logo brand-vortex">
+                    <img src="/assets/images/Vortex.png" alt="" loading="lazy" decoding="async">
+                </div>
+                <div class="brand-logo brand-coco">
+                    <img src="/assets/images/Coco Butter.png" alt="" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-band section-band--soft">
+    <section class="feature-grid" id="features">
+        <div class="card w-small-plus">
+            <div class="viz-placeholder">
+                <div class="scanner-shell" aria-hidden="true">
+                    <div class="scanner-docs">
+                        <span></span>
+                        <div class="scanner-docs-lines"></div>
+                    </div>
+                    <div class="scanner-lottie" id="scanner-lottie"></div>
+                </div>
+            </div>
+            <h3>1. Contracts that Manage Themselves</h3>
+            <p>Drag, drop, and done. Gemm auto-extracts every milestone, bonus, and deliverable so your managers stop babysitting spreadsheets and start closing more talent.</p>
+        </div>
+
+        <div class="card w-large-trim">
+            <div class="viz-placeholder viz-spline">
+                <div class="success-orb-wrap">
+                    <div class="success-icon" aria-hidden="true">
+                        <video loop muted playsinline preload="none">
+                            <source src="https://pub-60f0431cd7c14788920e5ab408ae1c71.r2.dev/perfect splits.webm" type="video/webm">
+                            <source src="https://pub-60f0431cd7c14788920e5ab408ae1c71.r2.dev/Perfect splits.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <h3>2. Perfect Splits, Zero Math</h3>
+            <p>Total payout automation. No more manual commission calculations; just instant, error-free payouts for your agency, your managers, and your creators.</p>
+        </div>
+
+        <div class="card w-large">
+            <div class="viz-placeholder">
+                <div class="globe-lottie" aria-hidden="true">
+                    <video id="globe-video" loop muted playsinline preload="none">
+                        <source src="https://pub-60f0431cd7c14788920e5ab408ae1c71.r2.dev/globe.webm" type="video/webm">
+                        <source src="https://pub-60f0431cd7c14788920e5ab408ae1c71.r2.dev/globe.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <h3>3. Pay One Creator...or a Million</h3>
+            <p>Scale globally in a single click. Pay your entire roster worldwide instantly without wire fees, currency headaches, or the manual bank file nightmare.</p>
+        </div>
+
+        <div class="card w-small">
+            <div class="viz-placeholder viz-edge-to-edge">
+                <div class="card4-lottie" id="card4-lottie" aria-hidden="true"></div>
+            </div>
+            <h3>4. Turn Your Deal Flow into Passive Revenue</h3>
+            <p>Stop leaving money on the table. Put your capital to work by earning high-yield interest on every dollar of deal flow.</p>
+        </div>
+
+        <div class="card card-short w-medium">
+            <div class="viz-placeholder">
+                <div class="milestone-lottie-shell" id="milestone-lottie" aria-hidden="true"></div>
+            </div>
+            <h3>5. Kill the "Where’s My Money?" Email</h3>
+            <p>Build Tier-1 trust & transparency. Give your talent a live view of their earnings and milestones so they stay in their creative flow.</p>
+        </div>
+
+        <div class="card card-short card-short-transfer w-medium">
+            <div class="viz-placeholder viz-edge-to-edge">
+                <div class="transfer-lottie-shell" id="transfer-lottie" aria-hidden="true"></div>
+            </div>
+            <h3>6. Cash Out Before the Brand Pays</h3>
+            <p>Don't let Net-90 slow you down. Give your talent (and your agency) the power to pull earnings the second the deal is signed.</p>
+        </div>
+    </section>
+    </div>
+
+    <div class="section-band section-band--dark">
+    <section class="dashboard-plugin">
+        <p style="font-family: 'IBM Plex Mono'; font-size: 11px; letter-spacing: 3px; opacity: 0.5; margin-bottom: 12px;">OPERATIONAL COMMAND</p>
+        <h2 style="font-family: 'Manrope'; font-size: 44px; font-weight: 800; letter-spacing: -2px;">Your single control panel. Animated</h2>
+        <div class="dash-window">
+            <video class="dash-img" autoplay loop muted playsinline preload="metadata" aria-label="Gemm Dashboard View">
+                <source src="https://pub-60f0431cd7c14788920e5ab408ae1c71.r2.dev/Dashboard.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    </div>
+
+    <div class="section-band section-band--clear">
+    <section class="global-section">
+        <h2 style="font-family: 'Manrope'; font-size: 48px; font-weight: 800; letter-spacing: -2.5px;">178+ countries and counting</h2>
+        <div class="global-grid">
+            <div class="stat-card"><h4>Pay Creators Worldwide</h4><p>178 countries</p></div>
+            <div class="stat-card"><h4>No Waiting, No Holds</h4><p>Instant settlements</p></div>
+            <div class="stat-card"><h4>Yield on Sitting Funds</h4><p>Your balance earns</p></div>
+        </div>
+    </section>
+    </div>
+
+    <div class="section-band section-band--soft">
+    <section class="quotes" id="testimonials">
+        <div class="quotes-grid">
+            <article class="quote-card">
+                <div class="quote-text">"In one click, we just paid out 62 creators, 4 agencies, and 12 talent managers. That back and forth of invoices, due dates, W9s are eliminated from our comms."</div>
+                <div class="quote-author">Reach Management (Dylan Huey)</div>
+            </article>
+            <article class="quote-card">
+                <div class="quote-text">"We drop in our contract and everything is handled from invoice to payout."</div>
+                <div class="quote-author">Starline Management (William Lee)</div>
+            </article>
+        </div>
+    </section>
+    </div>
+
+    <div class="section-band section-band--clear">
+    <section class="paid-brands">
+        <p class="paid-brands-label">PAID ON GEMM</p>
+        <h2>Brands that have paid on Gemm</h2>
+        <div class="paid-marquee" aria-label="Brands that have paid on Gemm">
+            <div class="paid-track">
+                <div class="paid-group" aria-hidden="false">
+                    <div class="paid-logo brand-loreal"><img src="/assets/images/l'oreal.png" alt="L'Oreal" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-invisalign"><img src="/assets/images/invisalign.png" alt="Invisalign" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-gofundme"><img src="/assets/images/gofundme.png" alt="GoFundMe" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-omnicom"><img src="/assets/images/omnicom.png" alt="Omnicom Media" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-dralthea"><img src="/assets/images/dralthea.avif" alt="Dr Althea" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-cosnori"><img src="/assets/images/Cosnori.webp" alt="Cosnori" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-skinfix"><img src="/assets/images/skinfix.png" alt="Skinfix" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-headshoulders"><img src="/assets/images/h-s.png" alt="Head and Shoulders" loading="lazy" decoding="async"></div>
+                </div>
+                <div class="paid-group" aria-hidden="true">
+                    <div class="paid-logo brand-loreal"><img src="/assets/images/l'oreal.png" alt="" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-invisalign"><img src="/assets/images/invisalign.png" alt="" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-gofundme"><img src="/assets/images/gofundme.png" alt="" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-omnicom"><img src="/assets/images/omnicom.png" alt="" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-dralthea"><img src="/assets/images/dralthea.avif" alt="" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-cosnori"><img src="/assets/images/Cosnori.webp" alt="" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-skinfix"><img src="/assets/images/skinfix.png" alt="" loading="lazy" decoding="async"></div>
+                    <div class="paid-logo brand-headshoulders"><img src="/assets/images/h-s.png" alt="" loading="lazy" decoding="async"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div class="section-band section-band--clear">
+    <section class="contact-support" id="contact-support">
+        <p class="contact-support-label">CONTACT / SUPPORT</p>
+        <h2>Need help? We’re here.</h2>
+        <a href="mailto:info@gemm.app?subject=Gemm%20Support" class="support-card">
+            <div class="support-copy">
+                <div class="support-title">Email us</div>
+                <div class="support-text">Drop us a note @ info@gemm.app</div>
+            </div>
+            <span class="support-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                    <path d="M3.75 6.75h16.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5H3.75a1.5 1.5 0 0 1-1.5-1.5v-7.5a1.5 1.5 0 0 1 1.5-1.5Zm0 1.92v.19l8.25 5.58l8.25-5.58v-.19H3.75Zm16.5 6.66V10.7l-7.83 5.29a.75.75 0 0 1-.84 0L3.75 10.7v4.63h16.5Z" fill="currentColor"/>
+                </svg>
+            </span>
+        </a>
+    </section>
+    </div>
+
+    <footer>
+        <div>
+            <p style="font-weight: 800; font-size: 20px; color: var(--text); margin-bottom: 10px; letter-spacing: -1px;">gemm</p>
+            <p>© 2026 Teal Pay Global Inc.</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/company/gemmapp/" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.83v1.64h.06c.53-1.01 1.84-2.08 3.79-2.08c4.05 0 4.8 2.66 4.8 6.12V21h-4v-5.57c0-1.33-.02-3.04-1.85-3.04c-1.86 0-2.15 1.45-2.15 2.95V21h-4V9Z"/>
+                </svg>
+            </a>
+            <a href="/pages/legal.html" style="color: inherit; text-decoration: none;" target="_blank" rel="noopener noreferrer">LEGAL</a>
+        </div>
+    </footer>
+</div>
+
+<script src="/assets/animations/card-animations.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const scannerLottie = document.getElementById('scanner-lottie');
+    const splitVideo = document.querySelector('.success-icon video');
+    const globeVideo = document.getElementById('globe-video');
+    const card4Lottie = document.getElementById('card4-lottie');
+    const milestoneLottie = document.getElementById('milestone-lottie');
+    const transferLottie = document.getElementById('transfer-lottie');
+    const card4LottieData = window.CARD4_LOTTIE_DATA;
+    const milestoneLottieData = window.MILESTONE_LOTTIE_DATA;
+    const transferLottieData = window.TRANSFER_LOTTIE_DATA;
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const scheduleTask = window.requestIdleCallback
+        ? (task) => window.requestIdleCallback(task, { timeout: 1200 })
+        : (task) => window.setTimeout(task, 0);
+
+    function safePlay(video) {
+        const playAttempt = video.play();
+        if (playAttempt && typeof playAttempt.catch === 'function') playAttempt.catch(() => {});
+    }
+
+    const io = 'IntersectionObserver' in window
+        ? new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                const target = entry.target;
+                const isVisible = entry.isIntersecting;
+
+                if (target._lottieFactory) {
+                    if (!target._lottieInstance && isVisible) {
+                        scheduleTask(() => {
+                            if (!target._lottieInstance && target._isVisible) {
+                                target._lottieInstance = target._lottieFactory();
+                            }
+                        });
+                    } else if (target._lottieInstance) {
+                        if (prefersReducedMotion) target._lottieInstance.goToAndStop(0, true);
+                        else if (isVisible) target._lottieInstance.play();
+                        else target._lottieInstance.pause();
+                    }
+                }
+
+                if (target.tagName === 'VIDEO') {
+                    if (isVisible) {
+                        if (!prefersReducedMotion) safePlay(target);
+                    } else {
+                        target.pause();
+                    }
+                }
+
+                target._isVisible = isVisible;
+            });
+        }, { rootMargin: '160px 0px' })
+        : null;
+
+    if (scannerLottie && window.SCANNER_DATA && window.lottie && !prefersReducedMotion) {
+        scannerLottie._lottieFactory = function () {
+            const scannerAnimation = window.lottie.loadAnimation({
+                container: scannerLottie,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                animationData: window.SCANNER_DATA,
+                rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid meet'
+                }
+            });
+
+            scannerAnimation.addEventListener('DOMLoaded', function () {
+                const svg = scannerLottie.querySelector('svg');
+                if (!svg) return;
+                svg.style.overflow = 'visible';
+            });
+
+            return scannerAnimation;
+        };
+
+        if (io) io.observe(scannerLottie);
+        else scannerLottie._lottieInstance = scannerLottie._lottieFactory();
+    }
+
+    if (card4Lottie && window.lottie) {
+        card4Lottie._lottieFactory = function () {
+            const graphAnimationData = JSON.parse(JSON.stringify(card4LottieData));
+            graphAnimationData.layers = (graphAnimationData.layers || []).filter(function (layer) {
+                return layer.nm !== 'Shape Layer 2';
+            });
+
+            const graphAnimation = window.lottie.loadAnimation({
+                container: card4Lottie,
+                renderer: 'svg',
+                loop: !prefersReducedMotion,
+                autoplay: !prefersReducedMotion,
+                animationData: graphAnimationData,
+                rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid meet'
+                }
+            });
+
+            graphAnimation.addEventListener('DOMLoaded', function () {
+                const svg = card4Lottie.querySelector('svg');
+                if (!svg) return;
+                svg.style.overflow = 'visible';
+                svg.style.background = 'transparent';
+                if (prefersReducedMotion) graphAnimation.goToAndStop(0, true);
+            });
+
+            return graphAnimation;
+        };
+
+        if (io) io.observe(card4Lottie);
+        else card4Lottie._lottieInstance = card4Lottie._lottieFactory();
+    }
+
+    if (milestoneLottie && window.lottie) {
+        milestoneLottie._lottieFactory = function () {
+            const milestoneAnimation = window.lottie.loadAnimation({
+                container: milestoneLottie,
+                renderer: 'svg',
+                loop: !prefersReducedMotion,
+                autoplay: !prefersReducedMotion,
+                animationData: milestoneLottieData,
+                rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid meet'
+                }
+            });
+
+            milestoneAnimation.addEventListener('DOMLoaded', function () {
+                const svg = milestoneLottie.querySelector('svg');
+                if (!svg) return;
+                svg.style.overflow = 'visible';
+                svg.style.background = 'transparent';
+                if (prefersReducedMotion) milestoneAnimation.goToAndStop(0, true);
+            });
+
+            return milestoneAnimation;
+        };
+
+        if (io) io.observe(milestoneLottie);
+        else milestoneLottie._lottieInstance = milestoneLottie._lottieFactory();
+    }
+
+    if (transferLottie && window.lottie) {
+        transferLottie._lottieFactory = function () {
+            const transferAnimation = window.lottie.loadAnimation({
+                container: transferLottie,
+                renderer: 'svg',
+                loop: !prefersReducedMotion,
+                autoplay: !prefersReducedMotion,
+                animationData: transferLottieData,
+                rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid slice'
+                }
+            });
+
+            transferAnimation.addEventListener('DOMLoaded', function () {
+                const svg = transferLottie.querySelector('svg');
+                if (!svg) return;
+                svg.style.overflow = 'visible';
+                svg.style.background = 'transparent';
+                if (prefersReducedMotion) transferAnimation.goToAndStop(0, true);
+            });
+
+            return transferAnimation;
+        };
+
+        if (io) io.observe(transferLottie);
+        else transferLottie._lottieInstance = transferLottie._lottieFactory();
+    }
+
+    if (splitVideo) {
+        if (io) io.observe(splitVideo);
+        else {
+            if (!prefersReducedMotion) safePlay(splitVideo);
+        }
+    }
+
+    if (globeVideo) {
+        if (io) io.observe(globeVideo);
+        else {
+            if (!prefersReducedMotion) safePlay(globeVideo);
+        }
+    }
+
+    document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+            if (splitVideo) splitVideo.pause();
+            if (globeVideo) globeVideo.pause();
+            if (scannerLottie && scannerLottie._lottieInstance) scannerLottie._lottieInstance.pause();
+            if (card4Lottie && card4Lottie._lottieInstance) card4Lottie._lottieInstance.pause();
+            if (milestoneLottie && milestoneLottie._lottieInstance) milestoneLottie._lottieInstance.pause();
+            if (transferLottie && transferLottie._lottieInstance) transferLottie._lottieInstance.pause();
+        } else if (!prefersReducedMotion) {
+            if (splitVideo && (!io || splitVideo._isVisible !== false)) safePlay(splitVideo);
+            if (globeVideo && (!io || globeVideo._isVisible !== false)) safePlay(globeVideo);
+            if (scannerLottie && scannerLottie._lottieInstance && (!io || scannerLottie._isVisible !== false)) scannerLottie._lottieInstance.play();
+            if (card4Lottie && card4Lottie._lottieInstance && (!io || card4Lottie._isVisible !== false)) card4Lottie._lottieInstance.play();
+            if (milestoneLottie && milestoneLottie._lottieInstance && (!io || milestoneLottie._isVisible !== false)) milestoneLottie._lottieInstance.play();
+            if (transferLottie && transferLottie._lottieInstance && (!io || transferLottie._isVisible !== false)) transferLottie._lottieInstance.play();
+        }
+    }, { passive: true });
+});
+</script>
+
+</body>
+</html>
