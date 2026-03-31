@@ -135,7 +135,7 @@
         </div>
 
         <div class="card card-short w-medium">
-            <div class="viz-placeholder">
+            <div class="viz-placeholder viz-chat">
                 <div class="milestone-lottie-shell" id="milestone-lottie" aria-hidden="true"></div>
             </div>
             <h3>5. Kill the "Where’s My Money?" Email</h3>
@@ -265,8 +265,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const milestoneLottie = document.getElementById('milestone-lottie');
     const transferLottie = document.getElementById('transfer-lottie');
     const card4LottieData = window.CARD4_LOTTIE_DATA;
-    const milestoneLottieData = window.MILESTONE_LOTTIE_DATA;
     const transferLottieData = window.TRANSFER_LOTTIE_DATA;
+    const chatLottieDataPromise = fetch('/assets/animations/chat-animation.json').then(function (response) {
+        if (!response.ok) throw new Error('Unable to load chat animation.');
+        return response.json();
+    }).catch(function () {
+        return null;
+    });
     const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const scheduleTask = window.requestIdleCallback
         ? (task) => window.requestIdleCallback(task, { timeout: 1200 })
@@ -371,26 +376,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (milestoneLottie && window.lottie) {
         milestoneLottie._lottieFactory = function () {
-            const milestoneAnimation = window.lottie.loadAnimation({
-                container: milestoneLottie,
-                renderer: 'svg',
-                loop: !prefersReducedMotion,
-                autoplay: !prefersReducedMotion,
-                animationData: milestoneLottieData,
-                rendererSettings: {
-                    preserveAspectRatio: 'xMidYMid meet'
-                }
+            const chatAnimation = {
+                play: function () {},
+                pause: function () {},
+                goToAndStop: function () {},
+                destroy: function () {}
+            };
+
+            chatLottieDataPromise.then(function (chatLottieData) {
+                if (!chatLottieData || milestoneLottie._lottieInstance !== chatAnimation) return;
+
+                const animation = window.lottie.loadAnimation({
+                    container: milestoneLottie,
+                    renderer: 'svg',
+                    loop: !prefersReducedMotion,
+                    autoplay: !prefersReducedMotion,
+                    animationData: chatLottieData,
+                    rendererSettings: {
+                        preserveAspectRatio: 'xMidYMid meet'
+                    }
+                });
+
+                chatAnimation.play = function () { animation.play(); };
+                chatAnimation.pause = function () { animation.pause(); };
+                chatAnimation.goToAndStop = function (value, isFrame) { animation.goToAndStop(value, isFrame); };
+                chatAnimation.destroy = function () { animation.destroy(); };
+
+                animation.addEventListener('DOMLoaded', function () {
+                    const svg = milestoneLottie.querySelector('svg');
+                    if (!svg) return;
+                    svg.style.overflow = 'visible';
+                    svg.style.background = 'transparent';
+                    if (prefersReducedMotion) animation.goToAndStop(0, true);
+                });
             });
 
-            milestoneAnimation.addEventListener('DOMLoaded', function () {
-                const svg = milestoneLottie.querySelector('svg');
-                if (!svg) return;
-                svg.style.overflow = 'visible';
-                svg.style.background = 'transparent';
-                if (prefersReducedMotion) milestoneAnimation.goToAndStop(0, true);
-            });
-
-            return milestoneAnimation;
+            return chatAnimation;
         };
 
         if (io) io.observe(milestoneLottie);
