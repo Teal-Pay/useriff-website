@@ -322,6 +322,11 @@
             overflow: hidden;
             background: linear-gradient(180deg, #FCFAF7 0%, #F8F6F2 100%);
         }
+        .viz-placeholder.viz-chat {
+            padding: 16px 18px 10px;
+            overflow: hidden;
+            align-items: center;
+        }
         .success-orb-wrap {
             width: min(100%, 520px);
             height: 260px;
@@ -562,6 +567,27 @@
             height: 100%;
             display: block;
         }
+        .milestone-lottie-shell {
+            width: min(100%, 420px);
+            height: 100%;
+            max-height: 100%;
+            position: relative;
+            overflow: hidden;
+            background: transparent;
+        }
+        .milestone-lottie-shell svg,
+        .milestone-lottie-shell canvas,
+        .milestone-lottie-shell > div,
+        .milestone-lottie-shell > svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: transparent;
+            position: relative;
+            overflow: hidden;
+            transform: scale(0.82);
+            transform-origin: center center;
+        }
         .transfer-lottie-shell {
             width: calc(100% - 30px);
             height: calc(100% + 5px);
@@ -587,7 +613,7 @@
             display: block;
             background: transparent;
             position: relative;
-            transform: translateY(-15px) scale(1.18);
+            transform: translateY(-10px) scale(1.02);
             transform-origin: center center;
         }
         .stripe-globe {
@@ -2658,4 +2684,3 @@
             .doc-paper li { font-size: 15px; }
         }
     
-
