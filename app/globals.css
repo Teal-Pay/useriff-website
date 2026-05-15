@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Riff — Swiss International Style (Editorial register)
+   Design tokens (single source of truth, mirrored in tailwind.config.ts)
+   ============================================================ */
+@layer base {
+  :root {
+    /* Base palette — warm off-white + warm dark gray.
+       Pulls the system from Brutalist Swiss → Editorial Swiss.
+       Pairs better with pastel gradient than pure black/white would. */
+    --swiss-paper: #f5f6f6;
+    --swiss-ink: #313131;
+    --swiss-muted: #ebecec;
+    --swiss-border: #313131;
+
+    /* Spectrum — the brand's signal.
+       Used ONLY as borders on signature elements (Ghost Border).
+       NEVER as a fill. NEVER on type. */
+    --swiss-spectrum: linear-gradient(135deg, #ffb7f8 0%, #c2d3ff 50%, #83efc5 100%);
+
+    /* Focus ring — single solid color from the palette so it always meets
+       contrast requirements. Mint reads as accessible-system-green. */
+    --swiss-focus: #83efc5;
+
+    /* Border weights — never thinner than 2px to preserve Swiss density */
+    --swiss-border-thin: 2px;
+    --swiss-border-thick: 4px;
+  }
+
+  * {
+    @apply border-swiss-border;
+  }
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-swiss-paper text-swiss-ink font-sans;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.02;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  ::selection {
+    background: var(--swiss-ink);
+    color: var(--swiss-paper);
+  }
+
+  /* Focus visible — mint ring (sole accessibility-tested system color) */
+  :focus-visible {
+    outline: 2px solid var(--swiss-focus);
+    outline-offset: 2px;
+  }
+}
+
+/* ============================================================
+   Texture utilities — flat depth via patterns
+   Apply on muted/paper surfaces. NEVER on dark or gradient surfaces.
+   ============================================================ */
+@layer utilities {
+  /* 24×24 grid lines — visible structure on hero/sidebar surfaces */
+  .swiss-grid-pattern {
+    background-image:
+      linear-gradient(to right, rgba(49, 49, 49, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(49, 49, 49, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* 16×16 dot matrix — print-press feel */
+  .swiss-dots {
+    background-image: radial-gradient(rgba(49, 49, 49, 0.07) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+
+  /* 45° diagonal stripes — directional energy */
+  .swiss-diagonal {
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(49, 49, 49, 0.04) 0,
+      rgba(49, 49, 49, 0.04) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+  }
+
+  /* Local noise overlay — for cards/sections that need extra grain */
+  .swiss-noise {
+    position: relative;
+  }
+  .swiss-noise::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  /* ============================================================
+     GHOST BORDER — gradient applied as the stroke around shapes.
+     Surfaces stay flat; the gradient defines edges, never fills.
+     ============================================================
+     Usage: combine with Tailwind's border-width utility.
+       <div class="border-[3px] swiss-spectrum-border">
+     IMPORTANT: requires zero rounded corners (border-image quirk),
+     which is already system law. */
+  .swiss-spectrum-border {
+    border-style: solid;
+    border-image-source: var(--swiss-spectrum);
+    border-image-slice: 1;
+  }
+
+  /* ============================================================
+     OUTLINED TYPE — Ghost Border applied to display typography.
+     The letterforms become hollow shapes with paper interior.
+     Use ONLY at display sizes (text-display-sm and larger) — at
+     body sizes the stroke compromises legibility.
+     ============================================================ */
+  .swiss-text-outline {
+    -webkit-text-stroke: 3px var(--swiss-ink);
+    color: transparent;
+    /* Ensure stroke renders correctly on stacked elements */
+    paint-order: stroke fill;
+  }
+
+  /* Layered content sits above the body noise overlay */
+  .swiss-layer {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Respect reduced-motion preference everywhere */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
+}

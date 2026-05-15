@@ -1,0 +1,61 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { LegalDocShell } from "@/components/legal/legal-doc-shell";
+
+export const metadata: Metadata = {
+  title: "Riff Electronic Communications Policy",
+  description: "Electronic Communications Policy",
+};
+
+export default function ElectronicCommunicationsPolicyPage() {
+  return (
+    <LegalDocShell>
+      <div className="doc-actions">
+        <Link className="back-btn" href="/pages/legal/">
+          ← Back to Legal Disclosures
+        </Link>
+      </div>
+
+      <h1 className="section-title">{"Electronic Communications Policy"}</h1>
+
+      <section className="doc-paper" aria-label="Electronic Communications Policy">
+
+                        <p>This Electronic Communications Policy describes how Teal Pay Global, Inc, (&quot;Riff&quot;) delivers information and notices to you in connection with your use of our software platform and services (“Services”). By using Riff, you agree to receive communications from us electronically as described below. We may update this policy at any time by posting a revised version on our mobile and online platforms. Continued use of the Services indicates your acceptance of the most recent version of this policy.</p>
+
+                        <h3>1. Agreement to Receive Electronic Communications</h3>
+                        <p>You consent to receive all communications from Riff in electronic form. These communications (“Communications”) may include:</p>
+                        <ul>
+                            <li>Agreements and policies you agree to (e.g., the Terms of Use), and updates to those documents;</li>
+                            <li>Notifications about your activity on Riff, including account status, payment initiation, or platform alerts;</li>
+                            <li>Information required by law (if applicable), such as tax documents or legal disclosures;</li>
+                            <li>Any other information relating to your use of Riff’s Services.</li>
+                        </ul>
+                        <p>Communications will generally be provided by posting them to your dashboard or emailing them to the primary email address associated with your Riff user profile.</p>
+
+                        <h3>2. Hardware and Software Requirements</h3>
+                        <p>To access and retain electronic Communications, you must have</p>
+                        <ul>
+                            <li>A device with a current web browser and an internet connection;</li>
+                            <li>An active email address;</li>
+                            <li>Ability to access and view PDF documents (e.g., Adobe Acrobat Reader);</li>
+                            <li>Sufficient electronic storage capacity or a printer to retain a copy of Communications.</li>
+                        </ul>
+                        <p>By using Riff and consenting to this policy, you confirm that you meet these requirements.</p>
+
+                        <h3>3. Withdrawing Consent</h3>
+                        <p>You may withdraw your consent to receive electronic Communications by contacting us at info@useriff.app. Note that doing so may impact your ability to use certain Services, and we reserve the right to suspend or restrict your access to Riff if you cannot receive required communications electronically.</p>
+
+                        <h3>4. Requesting Paper Copies</h3>
+                        <p>You may request paper copies of Communications within 180 days of the original delivery date by contacting us at info@useriff.app. A records request fee may apply. We may require a current, valid mailing address in order to fulfill your request.</p>
+
+                        <h3>5. Keeping Your Contact Information Updated</h3>
+                        <p>It is your responsibility to keep your primary email address and other contact information up to date in your Riff account settings. If Communications are returned or undeliverable due to outdated or incorrect contact details, we will be deemed to have provided the Communication to you.</p>
+                        <p>Please ensure that your spam filters allow messages from Riff. If your email becomes invalid or bounces, we may treat your account as inactive until valid contact information is provided.</p>
+
+                        <h3>6. Security Notice</h3>
+                        <p>Riff will never request your password or login credentials via email, phone, or other unsolicited communications. If you suspect phishing or fraudulent messages, please contact info@useriff.app immediately and avoid clicking on suspicious links.</p>
+
+      </section>
+    </LegalDocShell>
+  );
+}
