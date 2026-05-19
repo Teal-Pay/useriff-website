@@ -1,0 +1,195 @@
+# Riff Web — Cursor Rules
+
+You are editing the Riff marketing website. This document is your operating
+manual. Read it before every change. Treat its rules as binding.
+
+## What this project is
+
+A single-page marketing site for **Riff**, a payments/invoicing/splits tool
+for creator collaborators. Built in Next.js 14 (App Router) + TypeScript +
+Tailwind + shadcn/ui patterns.
+
+The site is built in the **Swiss International Style (Editorial register)**,
+with a single brand-spectrum gradient applied via the **Ghost Border**
+philosophy — gradient ONLY appears as borders on signature elements, never
+as fills, never as text.
+
+For deeper context, read:
+- `docs/IA.md` — full information architecture, section purposes, intended
+  pages, content hierarchy
+- `README.md` — file structure, run instructions
+
+## Hard design rules — NEVER violate these
+
+1. **No rounded corners. Anywhere. Ever.** All borders are sharp 90° angles.
+   `rounded-none` is the default. Never use `rounded-md`, `rounded-lg`, etc.
+   The one exception is `.rounded-full` for the circle in the hero Bauhaus
+   composition — that's a deliberate geometric primitive, not UI ornamentation.
+2. **No drop shadows.** No `shadow-sm`, `shadow-md`, `shadow-xl`. Depth comes
+   from texture patterns and visible borders, never from shadow.
+3. **Borders are 2–4px thick.** Default to `border-[3px]`. Never thinner than
+   2px. Always `border-swiss-ink` (warm dark gray) unless on a dark background.
+4. **The palette is exactly four colors plus one gradient:**
+   - `swiss-paper` (#F5F6F6, warm off-white) — the canvas
+   - `swiss-ink` (#313131, warm dark gray) — text, borders, fills
+   - `swiss-muted` (#EBECEC, light gray) — secondary surfaces
+   - `swiss-focus` (#83EFC5, mint) — focus rings ONLY (accessibility)
+   - `swiss-spectrum` (#FFB7F8 pink → #C2D3FF blue → #83EFC5 mint, 135deg) — see Ghost Border below
+5. **Ghost Border philosophy.** The brand spectrum gradient is applied ONLY
+   as a stroke around signature elements via `.swiss-spectrum-border`.
+   NEVER as a fill. NEVER as text color. NEVER on more than 4 elements per
+   page. Current sanctioned uses:
+   - The hero Bauhaus square (1 instance per page)
+   - The primary CTA button border (`prismatic` variant — repeats per section)
+   - The featured pricing tier border (1 instance)
+   - Form input focus rings (when added)
+6. **Typography is Inter, all weights up to 900.** Headlines are uppercase.
+   Body is mixed case. Section labels are uppercase with `tracking-[0.2em]`.
+   Use the `text-display-sm/md/lg` scale for hero/section headlines.
+7. **Outlined display type** (`.swiss-text-outline`) is reserved for hero
+   headlines only. Use sparingly — typically one outlined word per line, or
+   a deliberate fill/stroke hierarchy across multiple lines.
+8. **No emoji, no decorative icons, no playful glyphs.** Use `lucide-react`
+   icons only when they communicate meaning, not decoration.
+9. **Hover states use color inversion**, not opacity fades. Black → paper,
+   white → ink, etc. Always `duration-150 ease-linear` (instant, mechanical).
+10. **No glass morphism, neumorphism, gradients-as-fill, or soft transitions.**
+
+## Token system — change once, ripple everywhere
+
+Design tokens live in TWO files that mirror each other:
+- `app/globals.css` — CSS custom properties (`--swiss-paper`, etc.)
+- `tailwind.config.ts` — Tailwind utilities (`swiss-paper`, etc.)
+
+**If you change a color, font, or scale in one, update the other in the same
+commit.** Never hardcode hex colors in components — always use the Swiss
+tokens (`bg-swiss-ink`, `text-swiss-ink`).
+
+The gradient is exposed two ways:
+- As a `backgroundImage.spectrum` Tailwind utility → `bg-spectrum`
+- As the `.swiss-spectrum-border` utility class → for border-image use
+
+## Button variants
+
+Defined in `components/ui/button.tsx`:
+
+- **`primary`** — Solid ink fill, paper text. Hover inverts to paper fill +
+  ink text. Use for general CTAs.
+- **`secondary`** — Paper fill, thick ink border. Hover inverts. Use for
+  ancillary actions next to a primary.
+- **`prismatic`** — Paper fill, gradient (Ghost Border) border, ink text.
+  Hover fills with ink (border stays gradient). Use for the SINGLE most
+  important CTA in any section. This is the brand's signature button.
+- **`ghost`** — Transparent, hover underlines. Use for tertiary nav-style
+  actions or "I already have an account"-style links.
+
+When adding a new button to a section, ask: "Is this THE primary call to
+action of this entire section?" If yes → `prismatic`. If no → `primary`
+or `secondary`.
+
+## File structure conventions
+
+- **One section per file** in `components/sections/`. Don't combine sections.
+- **Reusable layout helpers** in `components/primitives/` (Container,
+  SectionLabel, Rule).
+- **shadcn-style UI primitives** in `components/ui/` (Button, future Input,
+  Card, etc.). Always extend with `cva` variants — match the existing pattern
+  in `components/ui/button.tsx`.
+- **Page composition** lives ONLY in `app/page.tsx`. Pages should be thin —
+  just imports and JSX composition. No logic.
+- **Every section** must:
+  - Be wrapped in `<Container>`
+  - End with `border-b-[3px] border-swiss-ink` (so the page reads as a
+    stack of horizontal bands)
+  - Use a `<SectionLabel number="0X">Label</SectionLabel>` to anchor it
+  - Have a massive uppercase H2 using `text-display-sm` or larger
+
+## Voice — hybrid
+
+- **Structural elements** (section labels, nav, button labels, table
+  headers, footnotes): sober, declarative, uppercase. "01 — METHOD",
+  "EVIDENCE", "PRICING".
+- **Body copy and CTAs**: warm, conversational, slightly playful. Keep
+  Riff's personality intact: "Start riffing — free", "Splits without
+  spreadsheets", "April never sneaks up on you again."
+- Never write generic SaaS copy. Never write "Empower your workflow."
+
+## Texture utilities
+
+Defined in `app/globals.css`. Apply only on muted-gray or paper surfaces,
+never on ink or gradient surfaces:
+- `.swiss-grid-pattern` — 24×24 grid lines (use on hero sidebar, feature backgrounds)
+- `.swiss-dots` — 16×16 dot matrix (use on data viz containers, accent panels)
+- `.swiss-diagonal` — 45° stripes (use sparingly for directional energy)
+- `.swiss-noise` — fractal noise overlay (use on cards needing extra grain)
+
+## Evolving the system itself
+
+These rules govern component code. If you need to evolve the system itself
+(add a color, change the gradient, allow rounded corners), the legitimate
+path is:
+
+1. Update the token in BOTH `app/globals.css` AND `tailwind.config.ts`
+2. Update this file (`.cursorrules`) and `docs/IA.md` to reflect the new
+   reality
+3. The user must explicitly ask for the system change — don't propose
+   evolutions inside an unrelated edit.
+
+## Brand gradient — immutable sequence
+
+The spectrum gradient MUST always follow this exact stop order:
+
+```
+linear-gradient(135deg, #FFB7F8 0%, #C2D3FF 50%, #83EFC5 100%)
+```
+
+Pink `#FFB7F8` → Blue `#C2D3FF` → Mint `#83EFC5`. Do not invert. Do not
+randomize. Do not reorder stops. Do not change the angle without explicit
+approval. This sequence is mirrored in `--swiss-spectrum` (globals.css) and
+`backgroundImage.spectrum` (tailwind.config.ts) — if you change one, change
+both in the same commit.
+
+Any component that renders the gradient (prismatic button border, Bauhaus
+square border, feature icon hover fill) inherits this sequence via the token.
+Never hardcode gradient hex values in components — always reference the token.
+
+## Marquee / loop animations — structural rule
+
+Any CSS animation that is intended to scroll or loop continuously (e.g. the
+agencies proof-bar marquee) MUST declare its sub-properties individually
+rather than collapsing them into the `animation` shorthand. The reason: a
+shorthand declaration (including `animation: none` from a base/reset layer)
+can silently override the `iteration-count` that was set inside the same
+shorthand. Explicit sub-properties survive such cascades unless targeted
+directly.
+
+**Required pattern for every infinite marquee:**
+
+```css
+.my-marquee {
+  animation-name: my-keyframe;
+  animation-duration: Xs;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;   /* NEVER collapse this into shorthand */
+  animation-fill-mode: none;
+  animation-play-state: running;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .my-marquee { animation: none; }
+}
+```
+
+Never write `animation: my-keyframe Xs linear infinite` for a loop. The
+shorthand is legal CSS but fragile under cascade. The explicit form is
+mandatory here.
+
+## When in doubt
+
+- If a change might violate Swiss style or Ghost Border discipline,
+  **ask before editing**.
+- If a new component doesn't exist in `components/ui/`, build it following
+  the Button pattern (cva + asChild + variant + size).
+- If you need a new color, you don't. Use what exists.
+- If you need to use the gradient in a new way, ask first.
+- If you need rounded corners on UI elements, you don't. The answer is no.
