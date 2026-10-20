@@ -1,0 +1,114 @@
+/* Riff's editorial system: neutral page, bounded color, one focal point per story. */
+:root{--riff-cream:#f4f2ee;--riff-violet:#d8c5ef;--riff-violet-ink:#5e4285;--riff-mint:#c4e9d9;--riff-green-ink:#32674e;--riff-card-radius:16px;--riff-card-shadow:0 3px 8px #30313003,0 18px 40px -24px #30313030;--riff-quiet:#606762}
+.section-heading{margin-bottom:40px}.section-description p{color:var(--riff-quiet);font-weight:400;line-height:1.6}
+.hero{background:#fff;padding-bottom:52px}.hero-layout{grid-template-columns:.9fr 1.1fr;gap:40px}
+.hero-description{color:#555e58}.hero-tools{height:calc(474px * var(--scene-scale))}
+.tools-world:before{display:block;inset:37px 42px 6px 78px;background:var(--riff-violet);border-radius:47% 53% 48% 52% / 50% 41% 59% 50%;transform:rotate(-8deg)}
+.tools-world:after{content:'';position:absolute;right:40px;bottom:5px;width:138px;height:138px;border-radius:50%;background:var(--riff-mint);z-index:-1}
+.tools-world .tools-paths path{stroke:#8c6bb0;stroke-width:1.4;stroke-opacity:.6}
+.tools-world .tool-tile{border:0;border-radius:var(--riff-card-radius);box-shadow:var(--riff-card-shadow);padding:20px;display:block;max-width:none;min-height:0;color:#303130}
+.tools-world .tool-tile strong{font-size:20px;line-height:1.3;letter-spacing:-.035em;font-weight:550}.tools-world .tool-tile small{font-size:13px;color:var(--riff-quiet);display:block}
+.hero-email-card{left:12px;top:24px;width:274px;--tilt:-5deg}.hero-deal-card{left:454px;top:6px;width:220px;--tilt:5deg}.hero-contract-card{left:40px;top:326px;width:250px;--tilt:-3deg}.hero-payout-card{left:440px;top:308px;width:240px;--tilt:4deg}
+.hero-card-top{display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:12px;color:var(--riff-quiet);line-height:1.4}.hero-app-icon{width:26px;height:26px;display:grid;place-items:center;color:var(--riff-violet-ink);background:#f0e9f8;border-radius:8px}.hero-app-icon svg{width:19px;stroke:currentColor;stroke-width:1.5}.hero-unread{width:6px;height:6px;border-radius:50%;background:var(--riff-violet-ink);margin-left:auto}.hero-card-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;font-size:12px;color:var(--riff-quiet)}.hero-card-meta b{color:#303130;font-size:16px;font-weight:500}.hero-stage-dot,.hero-paid-dot{width:7px;height:7px;border-radius:50%;background:var(--riff-violet-ink)}.hero-paid-dot{background:#448564}.hero-stage-track{display:flex;gap:5px;margin-top:18px}.hero-stage-track i{height:4px;flex:1;background:#ece8ef;border-radius:3px}.hero-stage-track i:nth-child(-n+2){background:#9875c6}
+.tools-world .hero-contract-card{display:flex;gap:12px;padding:18px}.tools-world .hero-contract-card strong{font-size:17px}.hero-signed{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#e3f2e9;color:#347353;flex:none}.hero-signed svg{width:23px;stroke:currentColor;stroke-width:1.6}.hero-payout-amount{display:flex;align-items:center;justify-content:space-between}.tools-world .hero-payout-amount strong{font-size:35px;letter-spacing:-.05em}.hero-payout-amount .person-avatar{width:32px;height:32px;font-size:10px}.hero-payout-card .hero-card-top{margin-bottom:8px}
+.tools-world .riff-hub{left:238px;top:164px;width:236px;padding:27px 18px 23px;border:0;border-radius:20px;background:#fff;color:#303130;box-shadow:0 24px 48px -20px #4f386d45;transform:rotate(-1deg)}.tools-world .hub-logo img{width:110px;height:42px;margin-bottom:15px;filter:none}.tools-world .riff-hub h3{font-size:18px;line-height:1.25;font-weight:500;letter-spacing:-.035em}.tools-world .hub-features{gap:0;margin-top:14px}.tools-world .hub-features span{background:none;color:var(--riff-quiet);font-size:11px;padding:0 8px;border-radius:0}.tools-world .hub-features span+span{border-left:1px solid #dfe3df}
+.proof{border-top:0;padding-block:38px 48px}.proof-heading{color:#555d57}.stack-section{background:var(--riff-cream)}.stack-section .compare-tool{border-radius:10px;box-shadow:0 3px 10px #30313004}.stack-section .tool-category h3{color:var(--riff-quiet);font-size:13px}.stack-section .comparison-features li{border-radius:8px}
+/* Color belongs to the demonstration; headings stay on the neutral page. */
+.inbox-feature,.payments-feature{background:#fff;border:0;padding-block:88px 96px}
+.inbox-merge-scene{background:var(--riff-violet);border-radius:0;height:536px;overflow:hidden}
+.merge-state-copy{top:24px;color:#513d69;font-size:13px;font-weight:450}
+.separate-inboxes{inset:74px 24px 38px;gap:26px}.source-inbox{max-width:294px;border-radius:var(--riff-card-radius);border:0;box-shadow:var(--riff-card-shadow)}
+.merged-inbox{top:72px;bottom:40px;left:7%;right:7%;border:0;border-radius:var(--riff-card-radius);box-shadow:0 22px 48px -22px #4f386d50}
+.merged-sidebar{background:#faf9fb;border-color:#eeebf2}.merged-all{background:#e7dbf6;color:#51396e}.merged-header strong{font-weight:550}.merged-message:nth-child(1){background:#f1eaf9}.merged-message-copy strong{font-weight:500}.merged-message time,.merged-connected,.source-message p{color:#69726c}.merged-footer{background:#faf9fb}
+/* Only the deal in motion uses the accent; the lanes remain open. */
+.deals-feature{background:var(--riff-cream)}.deals-feature .pipeline-shell{min-height:296px}.deals-feature .deal-card{border-radius:var(--riff-card-radius);box-shadow:var(--riff-card-shadow)}.deals-feature .kanban-column{min-height:296px}.deals-feature .deal-focus{background:#fff;position:relative;z-index:2}.deal-focus-footer{display:flex;align-items:end;justify-content:space-between;gap:8px}.deal-focus-status{font-size:11px;font-weight:500;color:#5e4285;line-height:1.4}.deals-feature .kanban-column.is-current h3{border-color:#8b6ab0;color:#5e4285}.deals-feature .kanban-column h3{transition:color .45s,border-color .45s}.deals-feature .deal-card.is-published{background:#d8ecdf;transition:background .6s}.deal-card.is-published .deal-focus-status{color:#32674e}.deals-feature .kanban-column:last-child.is-current h3{color:#32674e;border-color:#76a58c}
+/* A single mint canvas frames the incoming payment and staggered payouts. */
+.payments-feature .payout-flow{background:var(--riff-mint);border-radius:0;padding:0;border:0;overflow:visible;box-shadow:none}.payout-map{grid-template-columns:minmax(240px,.95fr) 188px minmax(310px,1.2fr);gap:64px;padding:48px 32px;min-height:472px}.payment-scene .brand-payment,.payment-scene .payout-person,.payment-scene .payout-hub{box-shadow:var(--riff-card-shadow)}.payment-scene .brand-payment{border-radius:var(--riff-card-radius)}.payment-scene .payout-person{border-radius:var(--riff-card-radius)}.payment-scene .payout-hub{border-radius:20px}.brand-payment-top>div>span,.invoice-meta,.tax-status,.reminder-note div>span,.payment-scene .hub-payment-label{color:#69766e}.payout-list-heading span{color:#526e5e}.recipient-copy>strong{font-weight:500}.payment-scene .hub-payment-state{color:#32674e}.payment-scene .payout-line{stroke:#4c8b74}.brand-status{border-radius:8px}
+.customer-proof{padding-block:80px}.quote-layout blockquote{font-weight:400;letter-spacing:-.035em}.closing{padding-block:88px}
+@media(max-width:1100px){.hero-layout{gap:24px}.payout-map{grid-template-columns:minmax(200px,.9fr) 160px minmax(260px,1.15fr);gap:40px;padding:40px 24px}.merged-inbox{left:5%;right:5%;grid-template-columns:155px minmax(0,1fr)}.merged-message-copy{gap:12px}.merged-message-copy>span{font-size:12px}.source-inbox{width:30%}.source-account>div>span{font-size:10px}}
+@media(max-width:800px){.hero-layout{grid-template-columns:1fr}.hero{padding-bottom:44px}.hero-tools{margin-top:16px}.inbox-feature,.payments-feature{padding-block:68px}.inbox-merge-scene{height:510px}.payout-map{grid-template-columns:minmax(0,1fr);gap:52px;padding:36px 24px}.payment-scene .brand-payment{max-width:100%;width:310px}.payout-people{padding-left:22px}.deals-feature .kanban-column{min-height:290px}.customer-proof{padding-block:60px}.closing{padding-block:70px}}
+@media(max-width:700px){.inbox-merge-scene{height:494px;border-radius:0}.merge-state-copy{top:22px;font-size:12px}.separate-inboxes{inset:55px 0 28px}.source-inbox{width:78%;max-width:300px;margin-left:-39%;margin-top:-120px}.merged-inbox{top:58px;bottom:24px;left:16px;right:16px;display:block}.merged-header{padding:17px 14px}.merged-message{padding-inline:13px;gap:7px}.merged-message-copy>span{font-size:11px}.merged-footer{padding:12px 14px}.merged-header:before{width:42px;margin-right:10px}.merged-new{padding:5px 6px}.inbox-content .section-heading>h2{font-size:40px;line-height:1}}
+@media(max-width:540px){.tools-world .tool-tile{padding:19px}.tools-world .tool-tile strong{font-size:23px}.tools-world .tool-tile small{font-size:16px}.hero-card-top{font-size:17px;gap:8px;margin-bottom:13px}.hero-card-meta{font-size:16px;gap:8px}.hero-card-meta b{font-size:20px}.tools-world .hero-contract-card strong{font-size:20px}.hero-contract-card{top:332px}.hero-payout-card{top:314px}.hero-email-card{top:16px}.tools-world .hero-payout-amount strong{font-size:40px}.tools-world .riff-hub h3{font-size:21px}.tools-world .hub-features span{font-size:13px;padding-inline:6px}.hero-payout-amount .person-avatar{width:36px;height:36px;font-size:13px}.payout-map{padding:28px 16px;gap:48px}.payments-feature .payout-flow{border-radius:0}.payment-scene .brand-payment{padding:22px}.payout-person{padding:16px 12px;gap:8px}.payout-person .person-avatar{width:30px;height:30px;font-size:9px}.recipient-copy>strong{font-size:12px}.tax-status,.recipient-status{font-size:10px}.recipient-money>strong{font-size:20px}.transfer-check{width:18px;height:18px}.payout-list-heading strong{font-size:12px}.payout-list-heading span{font-size:10px}.deal-focus-footer{align-items:start;flex-direction:column;gap:6px}.deals-feature .deal-card{padding:16px 12px}.deal-focus-status{font-size:10px}.deals-feature .kanban-column{min-height:300px}}
+@media(prefers-reduced-motion:reduce){.deal-card,.kanban-column h3{transition:none!important}}
+
+/* Lift, drag, and settle: a living board rather than a single travelling tile. */
+.kanban-board{position:relative;isolation:isolate;opacity:1}
+.deals-feature .deal-card{position:relative}
+.deals-feature .deal-card.is-dragging{z-index:8;box-shadow:0 18px 38px -12px #40364b38,0 3px 8px #40364b0c}
+.deal-drag-marker{position:absolute;width:30px;height:34px;right:13px;bottom:-12px;z-index:9;color:#7954b1;opacity:0;transform:translate(8px,8px);transition:opacity .18s,transform .25s;pointer-events:none;filter:drop-shadow(0 2px 2px #30313020)}
+.deal-drag-marker svg{display:block;width:100%;height:100%}.deal-secondary .deal-drag-marker{color:#4f8c77}
+.is-dragging .deal-drag-marker{opacity:1;transform:translate(0,0)}
+.deal-origin{position:absolute;border:1px dashed #8b6ab03d;border-radius:var(--riff-card-radius);background:#e5ddef42;pointer-events:none;z-index:-1}
+.deals-feature .kanban-column.is-receiving-deal h3{color:#5e4285;border-color:#8b6ab0}
+.deal-secondary .deal-focus-status{color:#526d61}
+@media(prefers-reduced-motion:reduce){.deal-drag-marker,.deal-origin{display:none}.kanban-board{transition:none;opacity:1!important}}
+
+/* A loose, mixed cloud keeps the focus on consolidation, not categories. */
+.stack-section .comparison-frame{grid-template-rows:auto;row-gap:0;align-items:center}
+.stack-section .comparison-before{display:block;grid-column:1;grid-row:1;min-width:0}
+.stack-section .comparison-after{display:block;grid-column:3;grid-row:1}
+.stack-section .tools-merge-arrow{grid-column:2;grid-row:1;align-self:center;margin:0}
+.stack-section .representative-tool-cloud{list-style:none;margin:0 auto;padding:24px 12px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:22px 13px;max-width:710px}
+.stack-section .representative-tool-cloud .compare-tool{position:relative;margin:0;padding:12px 15px;min-height:46px;font-size:13px;line-height:1.3;gap:9px;border-radius:12px;white-space:nowrap;box-shadow:0 5px 15px -7px #30313016;transform:rotate(-2deg)}
+.stack-section .representative-tool-cloud .compare-tool img{width:22px;height:22px;object-fit:contain}
+.stack-section .representative-tool-cloud .compare-tool:nth-child(3n+2){transform:translateY(-7px) rotate(2deg)}
+.stack-section .representative-tool-cloud .compare-tool:nth-child(4n){transform:translateY(6px) rotate(-3deg)}
+.stack-section .representative-tool-cloud .compare-tool:nth-child(5n){transform:rotate(3deg)}
+@media(max-width:1100px){.stack-section .comparison-frame{grid-template-columns:minmax(0,1fr) 36px 210px;column-gap:26px}.stack-section .representative-tool-cloud{gap:20px 10px;padding-inline:4px}.stack-section .representative-tool-cloud .compare-tool{padding:11px 12px;font-size:12px}}
+@media(max-width:800px){.stack-section .comparison-frame{grid-template-columns:minmax(0,1fr);gap:28px}.stack-section .comparison-before{grid-column:1;grid-row:1}.stack-section .tools-merge-arrow{grid-column:1;grid-row:2;transform:rotate(90deg);justify-self:center;width:32px;height:32px}.stack-section .comparison-after{grid-column:1;grid-row:3}.stack-section .comparison-riff{margin:auto;align-items:center}.stack-section .representative-tool-cloud{max-width:620px}}
+@media(max-width:540px){.stack-section .representative-tool-cloud{gap:18px 9px;padding:10px 2px}.stack-section .representative-tool-cloud .compare-tool{font-size:11px;padding:10px 11px;min-height:40px;gap:7px}.stack-section .representative-tool-cloud .compare-tool img{width:19px;height:19px}.stack-section .comparison-after{padding-top:6px}.stack-section .comparison-riff{justify-content:center}}
+
+/* Customer voices get their own space, with both stories always visible. */
+.payments-feature{padding-bottom:48px}
+.customer-proof.section{padding-block:40px 96px;background:#fff}
+.customer-stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.customer-story{margin:0;padding:42px 40px 36px;border:0;border-radius:0;display:flex;flex-direction:column;min-width:0;color:#303130}
+.customer-story-reach,.customer-story-starline{background:var(--riff-cream)}
+.customer-logo{height:64px;display:flex;align-items:center;margin-bottom:34px}
+.customer-logo img{object-fit:contain;object-position:left center;max-width:100%;max-height:59px;height:auto}
+.customer-story blockquote{margin:0 0 36px;font-family:inherit;font-size:clamp(21px,1.8vw,25px);font-weight:400;line-height:1.5;letter-spacing:-.025em;color:#414440}
+.customer-story blockquote strong{font-weight:550;color:#252825}
+.customer-story figcaption{margin-top:auto;display:flex;flex-direction:column;gap:5px;line-height:1.5;font-size:15px}
+.customer-story figcaption strong{font-weight:550;color:#303130}.customer-story figcaption span{color:#656b65}
+@media(max-width:900px){.customer-story{padding:32px 28px}.customer-story blockquote{font-size:21px}.customer-logo img{max-width:195px}}
+@media(max-width:700px){.payments-feature{padding-bottom:36px}.customer-proof.section{padding-block:32px 64px}.customer-stories{grid-template-columns:1fr;gap:20px}.customer-story{padding:30px 26px;border-radius:0}.customer-logo{margin-bottom:24px}.customer-story blockquote{font-size:21px;margin-bottom:28px}.customer-story figcaption{font-size:15px}}
+
+/* Riff's pink, periwinkle, sky and mint spectrum, sampled from the brand direction. */
+:root{--riff-gradient-pink:#f4b6f4;--riff-gradient-purple:#c6c7fa;--riff-gradient-blue:#b5d2fa;--riff-gradient-mint:#8ce8cb}
+.inbox-merge-scene{background:linear-gradient(115deg,var(--riff-gradient-pink),#e0bff7 45%,var(--riff-gradient-purple))}
+.payments-feature .payout-flow{background:linear-gradient(115deg,var(--riff-gradient-blue),#a5dce8 48%,var(--riff-gradient-mint))}
+.hero{background-color:#fff;background-image:linear-gradient(100deg,#e8e2fa 0%,#ded6f8 20%,#d0bdf2 38%,var(--riff-gradient-blue) 60%,var(--riff-gradient-mint) 90%);background-position:center;background-size:100% 100%;background-repeat:no-repeat}
+.tools-world:before,.tools-world:after{display:none}
+@media(max-width:800px){.hero{background-image:linear-gradient(145deg,#e8e2fa 0%,#ded6f8 24%,#d0bdf2 43%,var(--riff-gradient-blue) 65%,var(--riff-gradient-mint) 90%);background-position:center;background-size:100% 100%}}
+
+/* Restore the six compact workflow cards around the central Riff hub. */
+.tools-world.hero-six .tool-tile{display:flex;align-items:center;gap:10px;padding:15px 17px;border-radius:14px;min-height:74px;max-width:224px}
+.tools-world.hero-six .tool-tile strong{font-size:18px;line-height:1.25;letter-spacing:-.025em}
+.tools-world.hero-six .tool-tile small{font-size:12px;line-height:1.4;margin-top:4px}
+.tools-world.hero-six .tool-loose{font-size:10px}
+.tools-world.hero-six .tool-symbol{color:#7b6095}.tools-world.hero-six .sheet-symbol{color:#528f75}.tools-world.hero-six .finance-symbol{background:#e4f2eb;color:#528f75}.tools-world.hero-six .email-symbol{color:#ad74a8}
+@media(max-width:540px){.tools-world.hero-six .tool-tile{padding:15px 12px;gap:9px}.tools-world.hero-six .tool-tile strong{font-size:23px}.tools-world.hero-six .tool-tile small,.tools-world.hero-six .tool-loose{display:none}}
+
+/* One clear home for Riff and the connected workflow. */
+.stack-section .comparison-riff{background:#fff;border:0;border-radius:24px;box-shadow:0 6px 16px #30313004,0 24px 52px -28px #30313030;padding:36px 24px;gap:28px;align-items:center;flex-direction:column;width:100%;max-width:300px;margin:auto}
+.stack-section .comparison-riff>img{width:136px;margin:0}
+.stack-section .comparison-riff .comparison-features{max-width:200px;justify-content:center}
+
+/* More space around the opening story and customer proof. */
+.hero{padding-top:184px;padding-bottom:92px}
+.proof{padding-block:72px 80px}
+.proof-heading{margin-bottom:36px}
+.proof-rows{gap:32px}
+@media(max-width:800px){.hero{padding-top:152px;padding-bottom:68px}.proof{padding-block:56px 60px}.proof-heading{margin-bottom:30px}.proof-rows{gap:28px}}
+@media(max-width:540px){.hero{padding-top:144px;padding-bottom:64px}}
+
+/* Cards enter clockwise once, then remain visible around Riff. */
+.tools-world.hero-six .workflow-icon{color:#765b9b}
+.tools-world.hero-six .tool-contracts .workflow-icon,.tools-world.hero-six .tool-payments .workflow-icon{color:#43846e}
+.tools-world.hero-six .workflow-connection{stroke:#7a639b;stroke-width:1.4;stroke-opacity:.38}
+.hero-tools.has-entrance .tool-tile{animation:hero-card-enter .7s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(.18s + var(--step) * .24s);animation-play-state:paused}
+.hero-tools.has-entrance .workflow-connection{animation:hero-line-enter .6s ease both;animation-delay:calc(.32s + var(--step) * .24s);animation-play-state:paused}
+.hero-tools.has-entrance.is-playing .workflow-connection,.hero-tools.has-entrance.is-playing .tool-tile{animation-play-state:running}
+@keyframes hero-card-enter{from{opacity:0;transform:translateY(18px) scale(.94) rotate(calc(var(--tilt,0deg) - 4deg))}to{opacity:1;transform:translateY(0) scale(1) rotate(var(--tilt,0deg))}}
+@keyframes hero-line-enter{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.hero-tools.has-entrance .workflow-connection,.hero-tools.has-entrance .tool-tile{animation:none}}

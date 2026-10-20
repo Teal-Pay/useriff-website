@@ -1,0 +1,50 @@
+
+.payments-feature .payout-flow{margin:0;border:0;background:transparent;box-shadow:none;overflow:visible}
+.payout-map{position:relative;display:grid;grid-template-columns:minmax(240px,1fr) 188px minmax(310px,1.15fr);align-items:center;gap:76px;min-height:440px;padding:36px 10px;isolation:isolate}
+.payout-lines{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;overflow:visible}
+.payout-line{stroke:#6ca88c;stroke-opacity:.22;stroke-width:2;fill:none}
+.payout-stream{stroke:#4c9d7b;stroke-width:3;stroke-linecap:round;fill:none}
+.transfer-particle{fill:#fff;stroke:#529e7f;stroke-width:2;filter:drop-shadow(0 0 5px #79cba6)}
+.payment-scene .brand-payment,.payment-scene .payout-person,.payment-scene .payout-hub{border:0;background:#fff;box-shadow:0 14px 40px -20px #305c4840,0 3px 8px #305c4805}
+.brand-payment{position:relative;border-radius:20px;padding:26px;transition:transform 0.424s cubic-bezier(.2,.7,.2,1),box-shadow 0.424s}
+.brand-payment-top{display:flex;align-items:center;gap:12px}.brand-monogram{display:grid;place-items:center;background:#323c36;color:#fff;width:44px;height:44px;border-radius:13px;font-family:Georgia,serif;font-size:25px;letter-spacing:-2px;flex:none}
+.brand-payment-top strong{font-size:16px;font-weight:600;display:block;letter-spacing:-.025em}.brand-payment-top>div>span{display:block;font-size:12px;color:#747c77;margin-top:4px}
+.invoice-meta{display:flex;justify-content:space-between;font-size:11px;color:#7b837e;margin-top:32px}.brand-payment-amount{display:block;font-size:42px;font-weight:500;line-height:1.25;letter-spacing:-.055em;margin:28px 0 16px;font-variant-numeric:tabular-nums}.brand-payment-amount>span{font-size:24px;color:#a0a8a2;letter-spacing:-.04em}
+.brand-status{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:20px;background:#e6f5ed;color:#347454;font-size:11px;font-weight:500;transition:background 0.242s,color 0.242s}.brand-status:before{content:'';width:5px;height:5px;border-radius:50%;background:currentColor}.brand-status.is-waiting{background:#f4f0e5;color:#8b7549}
+.reminder-note{display:flex;align-items:center;gap:10px;margin-top:26px;padding-top:18px;border-top:1px solid #edf0ed;transition:opacity 0.333s,transform 0.394s cubic-bezier(.2,.7,.2,1)}.reminder-icon{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#f1f5f2;color:#5c7365;flex:none}.reminder-icon svg{display:block;width:16px;height:16px;stroke:currentColor;stroke-width:1.4}.reminder-note strong,.reminder-note div>span{display:block}.reminder-note strong{font-size:11px;font-weight:500;color:#536158}.reminder-note div>span{font-size:10px;color:#8a938c;margin-top:3px}.reminder-check{display:grid;place-items:center;width:20px;height:20px;flex:none;margin-left:auto;color:#4f9b75}.reminder-check svg{display:block;width:17px;height:17px;stroke:currentColor;stroke-width:1.7}.is-animated:not(.reminded) .reminder-note{opacity:0;transform:translateY(12px)}
+.payment-scene .payout-hub{position:relative;width:188px;min-height:208px;border-radius:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px 12px;gap:0;transition:transform 0.424s cubic-bezier(.2,.7,.2,1),box-shadow 0.424s}
+.payout-hub img{width:84px;height:auto;filter:none}.payment-scene .hub-payment-label{font-size:11px;color:#7c867f;margin-top:23px}.hub-payment-total{font-size:32px;font-weight:500;letter-spacing:-.055em;line-height:1.3;font-variant-numeric:tabular-nums;margin-top:3px}.payment-scene .hub-payment-state{display:flex;align-items:center;gap:5px;font-size:10px;color:#438366;margin-top:17px}.hub-payment-state i{width:5px;height:5px;background:#6eb38f;border-radius:50%}.hub-orbit{position:absolute;inset:-9px;border:1px solid #6dbb9728;border-radius:32px;opacity:0;pointer-events:none}
+.is-receiving .payout-hub{transform:translateY(-7px)}.is-receiving .hub-orbit,.is-distributing .hub-orbit{animation:payment-ring 1.091s ease-out infinite}.is-receiving .brand-payment{transform:translateY(-5px)}
+.payout-people{display:grid;gap:10px}.payout-list-heading{display:flex;justify-content:space-between;align-items:center;margin:0 3px 8px}.payout-list-heading strong{font-size:13px;font-weight:500}.payout-list-heading span{font-size:11px;color:#688575}
+.payout-person{display:flex;align-items:center;gap:11px;min-height:79px;padding:17px 15px;border-radius:14px;position:relative;transition:transform 0.394s cubic-bezier(.16,1,.3,1),box-shadow 0.394s}.recipient-copy{min-width:0}.recipient-copy>strong{display:block;font-size:13px;font-weight:500;letter-spacing:-.02em}.tax-status{display:block;font-size:10px;color:#819087;margin-top:5px}.payout-person.is-paid .tax-status{color:#658772}.recipient-money{margin-left:auto;text-align:right;flex:none}.recipient-money>strong{display:block;font-size:21px;font-weight:500;letter-spacing:-.04em;line-height:1.1;font-variant-numeric:tabular-nums}.recipient-status{display:block;font-size:10px;color:#4f896b;margin-top:5px}.payout-person .person-avatar{width:34px;height:34px;font-size:10px;flex:none;border-radius:50%}
+.transfer-check{display:grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#edf7f1;color:#4f966f;flex:none;transform:scale(1);transition:transform 0.303s cubic-bezier(.2,1.7,.4,1),background 0.242s}.transfer-check svg{width:16px;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.transfer-check path{stroke-dasharray:18;stroke-dashoffset:0;transition:stroke-dashoffset 0.242s 0.061s}
+.is-animated .payout-person:not(.is-paid) .transfer-check{background:#f1f3f1;transform:scale(.7)}.is-animated .payout-person:not(.is-paid) .transfer-check path{stroke-dashoffset:18}.is-animated .payout-person:not(.is-paid) .recipient-status{color:#8a958e}.payout-person.is-sending{transform:translateX(-9px);box-shadow:0 15px 30px -12px #38755230}.payout-person.is-sending .transfer-check{animation:payment-pulse 0.545s ease-in-out infinite}.payout-person.is-paid{transform:translateX(0)}
+@keyframes payment-ring{0%{opacity:.75;transform:scale(.98)}100%{opacity:0;transform:scale(1.16)}}
+@keyframes payment-pulse{50%{opacity:.4;transform:scale(1.1)}}
+@media(max-width:1100px){.payout-map{grid-template-columns:minmax(220px,1fr) 160px minmax(280px,1.15fr);gap:42px;padding:28px 0}.brand-payment{padding:22px}.brand-payment-amount{font-size:38px}.payment-scene .payout-hub{width:160px;min-height:195px}.hub-payment-total{font-size:29px}.payout-person{padding:16px 12px;gap:9px}.recipient-money>strong{font-size:20px}.transfer-check{width:18px;height:18px}}
+@media(max-width:800px){.payout-map{grid-template-columns:1fr;justify-items:center;gap:52px;padding:14px 0}.brand-payment{width:310px;max-width:100%}.payment-scene .payout-hub{width:186px;min-height:178px;padding:23px 12px}.payment-scene .hub-payment-label{margin-top:16px}.payment-scene .hub-payment-state{margin-top:12px}.payout-people{width:100%;max-width:460px;padding-top:6px}.payout-person{padding:18px;min-height:82px}.payout-list-heading{margin-bottom:10px}.recipient-copy>strong{font-size:14px}.recipient-money>strong{font-size:23px}.payout-person .person-avatar{width:38px;height:38px}.tax-status,.recipient-status{font-size:11px}.transfer-check{width:22px;height:22px}.payout-person.is-sending{transform:translateY(-5px)}.brand-payment-amount{font-size:42px}}
+@media(prefers-reduced-motion:reduce){.payment-scene *{animation:none!important;transition:none!important}.hub-orbit{display:none}}
+
+/* Reveal the transaction as a sequence, with stable layout and illuminated transfers. */
+.payout-line{stroke:#4c8b74;stroke-width:1.25;stroke-opacity:.17;transition:opacity 0.303s}
+.payout-stream{stroke:url(#payment-energy);stroke-width:1.8}
+.payment-beam{fill:none;stroke:url(#payment-energy);stroke-width:3.5;stroke-linecap:round}
+.payment-beam-glow{stroke-width:10;filter:blur(5px)}
+.payment-beam-tip{stroke:#f8fffc;stroke-width:2}
+.payment-scene.is-animated .brand-payment,.payment-scene.is-animated .payout-hub,.payment-scene.is-animated .payout-person{opacity:0;transform:translateY(24px) scale(.96);filter:blur(4px);transition:opacity 0.394s ease,transform 0.545s cubic-bezier(.16,1,.3,1),filter 0.424s ease,box-shadow 0.424s}
+.payment-scene.is-animated .brand-payment.is-visible,.payment-scene.is-animated .payout-hub.is-visible,.payment-scene.is-animated .payout-person.is-visible{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+.payment-scene.is-animated .payout-person.is-visible.is-sending{transform:translateX(-6px);box-shadow:0 16px 36px -16px #38755245}
+.payment-scene.is-animated .payout-list-heading{opacity:0;transform:translateY(8px);transition:opacity 0.364s,transform 0.424s}
+.payment-scene.is-animated .payout-list-heading.is-visible{opacity:1;transform:none}
+.payment-scene .hub-orbit{border:0;background:radial-gradient(ellipse,#b8a0ec35,transparent 70%);inset:-45px;z-index:-1}
+.is-receiving .hub-orbit{animation:payment-arrival 0.727s ease-out both}
+.is-distributing .hub-orbit{animation:none;opacity:0}
+.payment-scene.is-resetting .brand-payment,.payment-scene.is-resetting .payout-hub,.payment-scene.is-resetting .payout-person,.payment-scene.is-resetting .payout-list-heading,.payment-scene.is-resetting .payout-lines{opacity:0!important;transition:opacity 0.394s}
+.payout-lines{transition:opacity 0.303s}
+@keyframes payment-arrival{0%{opacity:0;transform:scale(.7)}35%{opacity:1}100%{opacity:0;transform:scale(1.25)}}
+@media(max-width:800px){.payout-people{padding-left:22px}.payment-scene.is-animated .payout-person.is-visible.is-sending{transform:translateY(-4px)}}
+@media(prefers-reduced-motion:reduce){.payment-beam{display:none}.payment-scene .payout-lines{opacity:1!important}}
+
+/* A single green dot carries each transfer along its quiet connection. */
+.payment-dot{fill:#22875c;stroke:none;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.payment-dot{display:none}}

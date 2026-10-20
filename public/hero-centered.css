@@ -1,0 +1,21 @@
+.hero-tools{--scene-scale:.9;position:relative;height:calc(474px * var(--scene-scale));min-width:0}
+.tools-world{position:absolute;width:700px;height:444px;left:50%;top:0;transform:translateX(-50%) scale(var(--scene-scale));transform-origin:top center;isolation:isolate;color:#303130;font:14px/1.5 Geist,Arial,sans-serif}
+.tools-world h3,.tools-world p{margin:0;font-family:Geist,Arial,sans-serif}
+.tools-world svg{flex-shrink:0}
+.tools-paths{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+/* Separate tools gather into one calm home. */
+.tool-tile{position:absolute;display:flex;align-items:center;gap:10px;padding:14px 15px;border:1px solid #ece2f4;background:#ffffffed;border-radius:13px;box-shadow:0 9px 28px #75538c10;transform:rotate(var(--tilt,0deg));z-index:2;transform-origin:center}
+.tool-tile strong{font-size:16px;display:block;font-weight:550;letter-spacing:-.02em}.tool-tile small{display:block;font-size:12px;color:#61516d;margin-top:2px}.tool-symbol{height:32px;width:32px;display:grid;place-items:center;flex-shrink:0;font-size:26px;font-weight:600}.tool-symbol svg{width:28px;height:28px}.email-symbol{color:#d775a9}.sheet-symbol{color:#5cba89}.notion-symbol{border:1.7px solid #55505c;border-radius:5px;font:700 26px Georgia,serif;color:#4d4753;width:28px;height:28px;margin:2px}.contract-symbol{color:#9881d1}.finance-symbol{color:#679cce;background:#e1efff;border-radius:50%;font-size:22px}.chat-symbol{color:#ba7aaf}.tool-loose{position:absolute;right:-9px;bottom:-12px;padding:3px 8px;background:#f8eafb;border:1px solid #ebd4ed;border-radius:5px;font-size:8px;color:#a17eaa;transform:rotate(5deg)}
+.tool-email{left:0;top:30px;--tilt:-10deg}.tool-sheets{left:36%;top:0;--tilt:4deg}.tool-notion{right:-1%;top:43px;--tilt:10deg}.tool-contracts{left:1%;top:340px;--tilt:-7deg}.tool-payments{left:36%;top:361px;--tilt:4deg}.tool-chat{right:0;top:340px;--tilt:9deg}
+.riff-hub{position:absolute;left:25%;top:132px;width:51%;padding:23px 19px 20px;text-align:center;border-radius:21px;background:linear-gradient(125deg,#fff 30%,#f9f4ff 72%,#e7fbf1);box-shadow:0 0 0 9px #ffffff54,0 24px 58px #8754aa26;border:1px solid #fff;z-index:4;}.hub-logo img{width:96px;height:36px;object-fit:contain;margin:0 auto 14px}.riff-hub h3{font-size:24px;letter-spacing:-.8px;line-height:1.2;font-weight:550}.riff-hub p{font-size:13px;color:#6b547c;margin-top:7px}.hub-features{display:flex;justify-content:center;gap:7px;margin-top:18px}.hub-features span{font-size:12px;padding:5px 9px;border-radius:5px;background:#eee1fa;color:#80618f}.hub-features span:nth-child(2){background:#e7ecff;color:#6d7faa}.hub-features span:nth-child(3){background:#def5e9;color:#568e71}
+/* One lilac field, white workflow cards, and a charcoal Riff anchor. */
+.tools-world:before{content:'';position:absolute;inset:-22px -12px -16px;z-index:-1;background:#e5b4f4;border-radius:28px}
+.tool-tile{background:#fff;border-color:#21212115;box-shadow:0 3px 5px #21212107,0 12px 22px -15px #21212135}
+.tool-tile small{color:#666}.tool-symbol{color:#383838}.finance-symbol{color:#383838;background:#f1f1f1}.notion-symbol{color:#383838;border-color:#383838}
+.tool-loose{font-size:10px;background:#fff;color:#555;border-color:#dedede}
+.riff-hub{background:#252525;color:#fff;border-color:#252525;box-shadow:0 14px 28px -12px #42205050}
+.hub-logo img{filter:brightness(0) invert(1)}.riff-hub p{color:#d1d1d1}
+.hub-features span,.hub-features span:nth-child(2),.hub-features span:nth-child(3){background:#414141;color:#f5f5f5}
+.tools-paths path{stroke:#80538f;stroke-width:1.6}.tools-paths circle{stroke:#80538f;stroke-opacity:.18}
+@media(max-width:800px){.hero-tools{max-width:620px;justify-self:center;margin-top:10px;width:100%}}
+@media(max-width:540px){.tool-tile{max-width:224px;min-height:74px;padding:15px 12px;gap:9px}.tool-tile strong{font-size:23px}.tool-tile small,.tool-loose{display:none}.riff-hub h3{font-size:27px}.riff-hub p{display:none}.hub-features span{font-size:18px;padding:5px 8px}.riff-hub{padding:23px 14px}.hub-logo img{width:120px;height:45px}.hero-tools{margin-top:20px}}

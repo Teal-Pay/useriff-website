@@ -1,0 +1,76 @@
+/* V1's palette and surface treatments, applied to V2's layout. */
+:root{--ink:#303130;--muted:#646b67;--line:#e6e9e7;--lilac:#e6d4fa;--mint:#b5efda;--blue:#d6e2ff;--purple:#7954b1}
+.hero{background-color:#fff;background-image:linear-gradient(90deg,#fff 0%,#fff 32%,#ffffffed 42%,#ffffff00 64%),url('/assets/riff-hue-field.svg');background-position:center,right center;background-size:100% 100%,72% 100%;background-repeat:no-repeat}
+@media(max-width:800px){.hero{background-image:linear-gradient(180deg,#fff 0%,#fff 52%,#ffffff00 70%),url('/assets/riff-hue-field.svg');background-position:center,center bottom;background-size:100% 100%,100% 52%}}
+.hero-description{color:#464d48}
+.tools-world:before{display:none}
+.tool-tile{background:#fff;border-color:#e1e4e3;box-shadow:0 12px 36px #33313e07}
+.tool-tile small{color:#646b67}.tool-symbol{color:#806695}.sheet-symbol{color:#46a27e}.finance-symbol{background:#e1eaff;color:#4c669a}.notion-symbol{border-color:#55505c;color:#4d4753}
+.tool-loose{background:#fff;color:#706278;border-color:#ded4e7}
+.riff-hub{background:#fff;color:var(--ink);border-color:#e1e4e3;box-shadow:0 12px 36px #33313e0d}
+.hub-logo img{filter:none}.riff-hub p{color:var(--muted)}
+.hub-features span{background:#f0e7fa;color:#785299}.hub-features span:nth-child(2){background:#e9f0ff;color:#52719e}.hub-features span:nth-child(3){background:#e5f5ec;color:#41745a}
+.tools-paths path{stroke:url(#flow);stroke-width:1.5}.tools-paths circle{stroke:#be9cdd;stroke-opacity:.22}
+.inbox-feature{background:radial-gradient(ellipse at 100% 0%,#bf9af0a6,transparent 62%),radial-gradient(ellipse at 0% 100%,#efb5f580,transparent 58%),linear-gradient(125deg,#f4e6fd,#eee4ff 58%,#dce5ff);border-color:#e1d5ef}
+.inbox-feature .section-description p,.payments-feature .section-description p{color:var(--muted)}
+.pipeline-shell,.comparison-frame{background:linear-gradient(135deg,#f4effa,#eef3fc 60%,#eaf7f0);border-color:#dcdfe7}
+.kanban-column{background:#ffffff55;border-color:#ffffffb0}
+.deal-card{border-color:#e1e3e9;box-shadow:0 3px 6px #38325105}
+.comparison-riff{background:#fff;border-color:#e1e4e3;box-shadow:0 12px 36px #33313e07}.comparison-riff>img{filter:none}
+.comparison-features li{background:#f0e7fa;color:#785299}.comparison-features li:nth-child(n+3){background:#e5f5ec;color:#41745a}
+.tool-category h3,.comparison-after .tools-scene-label{color:#646b67}.tools-merge-arrow{color:#9a84b0}
+.payments-feature{background:radial-gradient(ellipse at 100% 5%,#62dcb375,transparent 58%),radial-gradient(ellipse at 0% 100%,#8ddfdc66,transparent 55%),linear-gradient(135deg,#e8faf1,#d4f5e6 64%,#bcefdc);border-color:#cce9dc}
+.payout-flow{background:#ffffff55;border-color:#cce5d8;box-shadow:0 12px 36px #33313e07}
+.payout-hub{background:#fff;border-color:#e1e4e3;box-shadow:0 12px 36px #33313e07}.payout-hub img{filter:none}.payout-hub>span{color:#646b67}
+.brand-payment,.payout-person{background:#fff;border-color:#e1e4e3;box-shadow:0 12px 36px #33313e07}
+.payout-person.is-paid{background:#fff;border-color:#bfdccb}.payout-line{stroke:#badaca}.payout-line.is-complete{stroke:#71b595}
+.money-token{background:#e5f5ec;color:#41745a;border-color:#badaca}.payment-milestones{background:#ffffff80;border-color:#dcece2}
+.avatar-lilac,.avatar-maya{background:#e9def7;color:#51405f}.avatar-mint{background:#d9f1e5;color:#387460}.avatar-blue{background:#e1eaff;color:#4c669a}.avatar-sand{background:#f6e5d9;color:#8f6548}
+.creator-maya{--creator-color:#785299;--creator-tint:#f0e7fa}.creator-jordan{--creator-color:#41745a;--creator-tint:#e5f5ec}.creator-ava{--creator-color:#52719e;--creator-tint:#e9f0ff}
+.merged-all{background:#e9dcfb;color:#463258}.merged-all span{color:#785299}.merged-message:nth-child(1){background:#f0e7fb}
+.closing{background:#303130;color:#fafbf9}.closing p{color:#cbd0cb}
+.closing .button.dark{background:#fff;color:#303130}.closing .button.dark:hover{background:#e9efea}
+
+/* White cards separate through light and shadow, without drawn outlines. */
+.tool-tile,.tool-loose,.riff-hub,.compare-tool,.comparison-riff,
+.source-inbox,.merged-inbox,.deal-card,.brand-payment,.payout-hub,
+.payout-person,.payout-person.is-paid,.price-card,.price-card.featured{
+  border-color:transparent;
+}
+.compare-tool{box-shadow:0 4px 16px #33313e06}
+.deal-card{box-shadow:0 4px 14px #38325108}
+
+/* Neutral tools section separates the white logos from the purple inbox story. */
+.stack-section{background:#f4f2ee}
+/* A lightweight tool directory and a compact Riff destination. */
+.stack-section .comparison-frame{background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;grid-template-columns:minmax(0,1fr) 64px 260px;grid-template-rows:auto auto;column-gap:48px;row-gap:32px;align-items:center}
+.comparison-before,.comparison-after{display:contents}
+.comparison-frame .tools-scene-label{margin:0;font-size:17px;font-weight:500;line-height:1.5;letter-spacing:-.02em;color:#303130;text-align:left;align-self:start}
+.comparison-before .tools-scene-label{grid-column:1;grid-row:1}
+.comparison-after .tools-scene-label{grid-column:3;grid-row:1}
+.comparison-tool-grid{grid-column:1;grid-row:2;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 36px}
+.stack-section .tool-category{display:block}
+.stack-section .tool-category h3{max-width:none;padding:0;margin:0 0 13px;font-size:12px;color:#737873;font-weight:450}
+.stack-section .tool-category .tool-cloud{padding-left:0;gap:8px}
+.stack-section .compare-tool{border:0;padding:8px 10px;min-height:37px;font-size:11px;gap:7px;border-radius:9px;transform:none;box-shadow:0 2px 8px #30313004}
+.stack-section .compare-tool img{width:19px;height:19px}
+.tools-merge-arrow{grid-column:2;grid-row:2;color:#aaa9a3;opacity:.7;align-self:start;margin-top:29px}
+.stack-section .comparison-riff{grid-column:3;grid-row:2;align-self:start;align-items:flex-start;justify-content:center;background:none;border:0;box-shadow:none;padding:0;border-radius:0;gap:26px}
+.stack-section .comparison-riff>img{width:145px;padding:0;margin:12px 0 4px;background:none;border-radius:0;box-shadow:none}
+.stack-section .comparison-features{display:grid;grid-template-columns:repeat(2,max-content);justify-content:start;gap:8px;max-width:230px}
+.stack-section .comparison-features li{font-size:13px;padding:8px 12px;border-radius:8px}
+@media(max-width:1100px){.stack-section .comparison-frame{grid-template-columns:minmax(0,1fr) 40px 210px;column-gap:30px}.comparison-tool-grid{gap:28px 22px}.stack-section .compare-tool{font-size:10px;padding:7px 8px}}
+@media(max-width:800px){.stack-section .comparison-frame{grid-template-columns:minmax(0,1fr) 28px 170px;column-gap:22px}.comparison-tool-grid{grid-template-columns:1fr;gap:22px}.comparison-frame .tools-scene-label{font-size:15px}.stack-section .comparison-riff>img{width:160px}.stack-section .comparison-features li{font-size:12px}}
+@media(max-width:540px){.stack-section .comparison-frame{grid-template-columns:1fr;gap:26px}.comparison-before,.comparison-after{display:block}.comparison-frame .tools-scene-label{margin-bottom:25px;font-size:16px}.comparison-after{max-width:none}.comparison-tool-grid{gap:24px}.stack-section .compare-tool{font-size:11px;padding:8px 10px}.stack-section .comparison-riff{flex-direction:row;align-items:center;gap:22px;max-width:none;margin:0}.stack-section .comparison-riff>img{width:136px;padding:0;margin:0;flex:none}.stack-section .comparison-features{gap:7px;max-width:170px}.stack-section .comparison-features li{padding:7px 9px;font-size:11px}.tools-merge-arrow{grid-column:1;grid-row:auto;width:28px;height:28px;transform:rotate(90deg);justify-self:center;margin-top:0}}
+.deals-feature{background:#f4f2ee}
+.deals-feature .section-description p{color:#646b67}
+/* Open Kanban lanes: only the deals have a card surface. */
+.deals-feature .pipeline-shell{background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}
+.deals-feature .kanban-board{gap:24px}
+.deals-feature .kanban-column{background:transparent;border:0;border-radius:0;padding:0;min-height:0}
+.deals-feature .kanban-column h3{margin:0 0 18px;padding:0 0 16px;border-bottom:1px solid #30313020;font-size:14px;gap:9px}
+.deals-feature .kanban-column h3>span{margin-left:2px;color:#747873;font-size:12px}
+.deals-feature .kanban-cards{gap:14px}
+.deals-feature .deal-card{border:0;border-radius:12px;padding:20px;box-shadow:0 4px 16px #30313008}
+@media(max-width:800px){.deals-feature .kanban-board{gap:28px 20px}}
+@media(max-width:540px){.deals-feature .kanban-board{gap:26px 14px}.deals-feature .kanban-column h3{font-size:12px;gap:6px;padding-bottom:12px;margin-bottom:14px}.deals-feature .kanban-column h3>span{font-size:11px}.deals-feature .deal-card{padding:16px 12px}.deals-feature .deal-card h4{min-height:0}.deals-feature .kanban-cards{gap:12px}}

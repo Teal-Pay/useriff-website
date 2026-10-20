@@ -1,0 +1,11 @@
+/* Shared marketing hierarchy. Product mockups and reading-column headings
+   retain their smaller, task-specific typography. */
+:root{--riff-page-title:56px;--riff-section-title:40px;--riff-closing-title:44px;--riff-subsection-title:32px;--riff-feature-title:36px;--riff-card-title:30px}
+.riff-page .page-intro h1,.riff-page .customers-intro h1{font-size:var(--riff-page-title);line-height:1.06}
+.section-heading h1,.section-heading h2,.inbox-content .section-heading>h2,.riff-page .page-section>.container>h2,.riff-page .customers-brands h2{font-size:var(--riff-section-title);line-height:1.08}
+.closing h2,.riff-page .page-closing h2{font-size:var(--riff-closing-title);line-height:1.08}
+.riff-page .faq-group h2{font-size:var(--riff-subsection-title);line-height:1.12}
+.riff-page .starline-story h2,.riff-page .journey-detail h2,.riff-page .journal-feature h2{font-size:var(--riff-feature-title);line-height:1.1}
+.riff-page .post-card h2{font-size:var(--riff-card-title);line-height:1.12}
+@media(max-width:800px){:root{--riff-page-title:48px;--riff-section-title:36px;--riff-closing-title:40px;--riff-subsection-title:30px;--riff-feature-title:34px;--riff-card-title:28px}}
+@media(max-width:540px){:root{--riff-page-title:42px;--riff-section-title:32px;--riff-closing-title:36px;--riff-subsection-title:28px;--riff-feature-title:30px;--riff-card-title:27px}}

@@ -1,0 +1,18 @@
+/* Magnetic field concept: one central home and six responsive workflow cards. */
+.hero-magnetic{position:relative;min-width:0;height:510px;isolation:isolate;touch-action:pan-y;font-family:Geist,Arial,sans-serif;color:#303332}
+.magnetic-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.magnetic-lines path{fill:none;stroke:#9286a9;stroke-width:1.3;opacity:.65}
+
+.magnetic-core,.magnetic-node{position:absolute;box-sizing:border-box;background:#fff;border:0;box-shadow:0 10px 28px #2832530a}
+.magnetic-core{width:226px;height:160px;left:50%;top:51%;transform:translate(-50%,-50%);border-radius:24px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;padding:16px}
+.magnetic-core>img{width:110px;height:auto;margin-bottom:19px}.magnetic-core>strong{font-size:18px;letter-spacing:-.5px;font-weight:500;line-height:1.4}.magnetic-core>span{display:flex;gap:12px;align-items:center;font-size:11px;color:#67716c;margin-top:13px;line-height:1.4}.magnetic-core i{width:1px;height:10px;background:#d6d4dc}
+.magnetic-node{width:172px;height:76px;left:0;top:0;border-radius:16px;display:flex;align-items:center;gap:12px;padding:15px;text-align:left;z-index:2;will-change:transform}
+.magnetic-node strong{display:block;font-size:15px;font-weight:500;line-height:1.3;white-space:nowrap;letter-spacing:-.025em}.magnetic-node small{display:block;font-size:11px;margin-top:6px;color:#67716c;line-height:1.3;white-space:nowrap}
+.magnetic-node svg{color:#8061a7;width:24px;height:24px;flex-shrink:0}
+@media(min-width:801px) and (max-width:1250px){.magnetic-node{width:155px;gap:9px;padding:12px}.magnetic-node strong{font-size:14px}.magnetic-node small{font-size:10px}.magnetic-node svg{width:21px;height:21px}.magnetic-core{width:210px;height:152px}.magnetic-core>strong{font-size:17px}}
+@media(max-width:800px){.hero-magnetic{width:100%;max-width:700px;justify-self:center;margin-top:12px}}
+@media(max-width:520px){.hero-magnetic{height:570px}.magnetic-node{width:132px;height:70px;gap:7px;padding:10px;border-radius:13px}.magnetic-node strong{font-size:12px}.magnetic-node small{font-size:10px}.magnetic-node svg{width:18px;height:18px}.magnetic-core{width:190px;height:148px}.magnetic-core>strong{font-size:16px}.magnetic-core>span{gap:10px;font-size:10px}.magnetic-core>img{width:100px}}
+@media(prefers-reduced-motion:reduce){.magnetic-node{will-change:auto}}
+
+/* Play the staggered entrance once, then retain the completed diagram. */
+.hero-magnetic.has-entrance .magnetic-node,.hero-magnetic.has-entrance .magnetic-lines path{animation:none}

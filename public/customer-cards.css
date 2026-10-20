@@ -1,0 +1,19 @@
+/* One testimonial component on the homepage and customer stories. */
+.customer-quote-card{margin:0;padding:40px;background:#f4f2ee;border:0;border-radius:0;display:flex;flex-direction:column;min-width:0;color:#303130}
+.customer-quote-logo{display:flex;align-items:center;height:64px;flex:none;margin-bottom:28px}
+.customer-quote-logo img{display:block;object-fit:contain;object-position:left center;width:200px;height:58px;max-width:100%;max-height:58px}
+.customer-quote-logo img[src*="riff-reach"]{width:150px}
+.customer-quote-card blockquote,.customers-page .customer-quote-card blockquote{margin:0;font-family:Geist,Arial,sans-serif;font-size:23px;font-weight:400;line-height:1.55;letter-spacing:-.025em;color:#414440}
+.customer-quote-card blockquote strong{font-weight:550;color:#252825}
+.customer-quote-card figcaption,.customers-page .customer-quote-card figcaption{display:flex;flex-direction:column;gap:5px;margin-top:auto;padding-top:30px;font-size:15px;line-height:1.5}
+.customer-quote-card figcaption strong{font-weight:550;color:#303130}.customer-quote-card figcaption span{color:#656b65}
+.customers-page .customer-case-story{display:grid;grid-template-columns:.85fr 1.15fr;align-items:stretch;min-height:520px;margin:0}
+.customers-page .customer-case-story+.customer-case-story{margin-top:40px}
+.customer-case-story .customer-case-visual{min-width:0}
+.customer-case-story .reach-result{justify-content:center}.customer-case-story .reach-result-main{margin:0 0 36px}.customer-case-story .reach-result-detail{margin-top:0}
+.customers-page .customer-case-story .starline-workflow{display:flex;flex-direction:column;justify-content:center;align-items:stretch;gap:0;padding:42px 30px}
+.customer-case-story .starline-workflow ol{width:100%;max-width:340px;margin-inline:auto}
+.customer-case-story .customer-workflow-head{margin-bottom:30px}
+@media(max-width:900px){.customer-quote-card{padding:32px}.customer-quote-card blockquote,.customers-page .customer-quote-card blockquote{font-size:21px}.customers-page .customer-case-story{grid-template-columns:1fr 1.15fr}}
+@media(max-width:800px){.customers-page .customer-case-story{grid-template-columns:1fr;min-height:0}.customer-case-story .reach-result{padding:32px;grid-template-columns:1fr 1fr;align-items:center;gap:30px}.customer-case-story .reach-result-main{margin:0}.customer-case-story .reach-result-detail{margin:0}.customers-page .customer-case-story .starline-workflow{padding:32px}.customer-case-story .customer-workflow-head{margin-bottom:26px}.customer-case-story .starline-workflow ol{max-width:400px}}
+@media(max-width:540px){.customer-quote-card{padding:28px 24px}.customer-quote-logo{height:58px;margin-bottom:24px}.customer-quote-logo img{height:54px;max-height:54px;width:190px}.customer-quote-logo img[src*="riff-reach"]{width:142px}.customer-quote-card blockquote,.customers-page .customer-quote-card blockquote{font-size:20px;line-height:1.6}.customer-quote-card figcaption,.customers-page .customer-quote-card figcaption{font-size:14px;padding-top:26px}.customer-case-story .reach-result{padding:28px 24px;gap:20px}.customers-page .customer-case-story .starline-workflow{padding:30px 24px}.customers-page .customer-case-story+.customer-case-story{margin-top:28px}}

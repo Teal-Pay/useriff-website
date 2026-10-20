@@ -53,7 +53,7 @@ status: "draft"
 
 | Field | Required | Rules |
 |---|---|---|
-| `title` | ✅ | Sentence case. 4–12 words. No ending punctuation. The website renders it in uppercase automatically — do NOT write it in caps. |
+| `title` | ✅ | Sentence case. 4–12 words. No ending punctuation. The website renders it in sentence case — do NOT write it in caps. |
 | `excerpt` | ✅ | One sentence, 10–25 words. Plain, specific language. No marketing fluff. |
 | `publishedAt` | ✅ | ISO date `YYYY-MM-DD`. Must match the folder date. |
 | `author` | ✅ | Default `"The Riff Team"`. |

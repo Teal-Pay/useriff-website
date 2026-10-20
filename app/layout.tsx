@@ -1,86 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { getSiteUrl, getSiteUrlObject } from "@/lib/site";
+import { getSiteUrlObject } from "@/lib/site";
 import "./globals.css";
 
-const METADATA_BASE = getSiteUrlObject();
-const SITE_ORIGIN = getSiteUrl();
-
-const SITE_TITLE = "Riff — Collaborate. Create. Get paid.";
-const SITE_DESCRIPTION =
-  "The system for creators who work together. Splits, invoices, and payouts handled with the precision the money deserves.";
-
-const jsonLd = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Riff",
-    url: METADATA_BASE.origin,
-    logo: new URL("/riff-symbol.svg", METADATA_BASE).href,
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Riff",
-    url: METADATA_BASE.origin,
-  },
-];
-
-/**
- * Inter — Swiss style demands a neutral grotesque sans.
- * We expose the full weight range so headlines (900) and body (400/500) have room.
- */
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
+const site = getSiteUrlObject();
 export const metadata: Metadata = {
-  title: SITE_TITLE,
-  description: SITE_DESCRIPTION,
-  metadataBase: METADATA_BASE,
-  alternates: {
-    canonical: `${SITE_ORIGIN}/`,
-  },
-  openGraph: {
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
-    url: `${SITE_ORIGIN}/`,
-    siteName: "Riff",
-    images: [{ url: "/riff-wordmark.svg" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
-  },
-  icons: {
-    icon: [
-      { url: "/Favicons/32x32/LIGHT 32x32-logo only.png", media: "(prefers-color-scheme: light)" },
-      { url: "/Favicons/32x32/DARK 32x32-logo only.png", media: "(prefers-color-scheme: dark)" },
-    ],
-  },
+  metadataBase: site,
+  title: "Riff — Run every creator deal from inbox to 1099",
+  description: "The operating system for talent managers. Manage your creators' brand emails, deal progress, and payments in one place.",
+  robots: { index: true, follow: true },
+  icons: { icon: "/assets/riff-symbol.svg" },
 };
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" className={inter.variable}>
-      <body>
-        {jsonLd.map((schema, i) => (
-          <script
-            key={i}
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-          />
-        ))}
-        {children}
-      </body>
-    </html>
-  );
+const schemas = [
+  { "@context": "https://schema.org", "@type": "Organization", name: "Riff", url: site.origin, logo: new URL("/assets/riff-logo.svg", site).href, sameAs: ["https://www.linkedin.com/company/useriffapp/", "https://www.instagram.com/useriff.app/", "https://www.tiktok.com/@useriff.app", "https://www.youtube.com/@useriff_app"] },
+  { "@context": "https://schema.org", "@type": "WebSite", name: "Riff", url: site.origin },
+];
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return <html lang="en"><head>
+    <link rel="preload" href="/assets/46e73f4c01-4b73ec13-fkscreamer.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+    <link rel="preload" href="/assets/5afbb97555-geist-variable-latin-1.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+  </head><body>{schemas.map((schema, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />)}{children}</body></html>;
 }

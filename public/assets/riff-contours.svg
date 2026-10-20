@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000"><defs>
+<radialGradient id="l"><stop stop-color="#be65f5" stop-opacity="1"/><stop offset=".52" stop-color="#d6a0f8" stop-opacity=".84"/><stop offset="1" stop-color="#f1e4ff" stop-opacity="0"/></radialGradient>
+<radialGradient id="b"><stop stop-color="#719cff" stop-opacity="1"/><stop offset=".55" stop-color="#9dbbff" stop-opacity=".8"/><stop offset="1" stop-color="#e2eaff" stop-opacity="0"/></radialGradient>
+<radialGradient id="m"><stop stop-color="#34dbac" stop-opacity="1"/><stop offset=".5" stop-color="#7de9c9" stop-opacity=".8"/><stop offset="1" stop-color="#def8f1" stop-opacity="0"/></radialGradient>
+<radialGradient id="w"><stop stop-color="#fff"/><stop offset=".45" stop-color="#fff" stop-opacity=".94"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<linearGradient id="line"><stop stop-color="#c080ee"/><stop offset=".5" stop-color="#82a8f5"/><stop offset="1" stop-color="#5ad8b7"/></linearGradient>
+</defs><rect width="1600" height="1000" fill="#fff"/>
+<ellipse cx="40" cy="660" rx="620" ry="600" fill="url(#l)"/>
+<ellipse cx="720" cy="1000" rx="850" ry="450" fill="url(#b)"/>
+<ellipse cx="1560" cy="530" rx="680" ry="660" fill="url(#m)"/>
+<ellipse cx="1330" cy="-190" rx="650" ry="440" fill="url(#b)"/>
+<ellipse cx="790" cy="360" rx="670" ry="520" fill="url(#w)"/>
+<g fill="none" stroke="url(#line)" stroke-width=".7" opacity=".27"><path d="M -150 640 C 260 800 330 1080 810 940 S 1450 610 1750 780"/><path d="M -150 657 C 260 817 330 1072 810 950 S 1450 627 1750 793"/><path d="M -150 674 C 260 834 330 1064 810 960 S 1450 644 1750 806"/><path d="M -150 691 C 260 851 330 1056 810 970 S 1450 661 1750 819"/><path d="M -150 708 C 260 868 330 1048 810 980 S 1450 678 1750 832"/><path d="M -150 725 C 260 885 330 1040 810 990 S 1450 695 1750 845"/><path d="M -150 742 C 260 902 330 1032 810 1000 S 1450 712 1750 858"/><path d="M -150 759 C 260 919 330 1024 810 1010 S 1450 729 1750 871"/><path d="M -150 776 C 260 936 330 1016 810 1020 S 1450 746 1750 884"/><path d="M -150 793 C 260 953 330 1008 810 1030 S 1450 763 1750 897"/><path d="M -150 810 C 260 970 330 1000 810 1040 S 1450 780 1750 910"/><path d="M -150 827 C 260 987 330 992 810 1050 S 1450 797 1750 923"/><path d="M -150 844 C 260 1004 330 984 810 1060 S 1450 814 1750 936"/><path d="M -150 861 C 260 1021 330 976 810 1070 S 1450 831 1750 949"/></g></svg>

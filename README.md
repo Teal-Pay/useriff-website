@@ -1,120 +1,33 @@
-# Riff — Web (v2)
+# Riff marketing website
 
-Marketing site rebuild in the **Swiss International Style**.
-Stack: **Next.js 14** (App Router) · **Tailwind CSS** · **shadcn/ui** patterns · **TypeScript**.
+Production: https://www.useriff.app/ · Repository: Teal-Pay/useriff-website · Hosting: Vercel, production branch `main`.
 
-## For editors (you or Cursor) — read these first
+The approved Riff redesign runs in the existing Next.js 14 App Router deployment. It uses local FK Screamer and Geist fonts, the Riff purple/blue/mint gradients, and the approved product demonstrations.
 
-- **`.cursorrules`** — Hard design rules. Cursor reads this automatically on
-  every prompt. Anyone editing the site must follow these.
-- **`docs/IA.md`** — Information architecture: what each section does, the
-  intended growth into multi-page, content hierarchy, voice rules, decisions
-  not to relitigate.
+## Run and verify
 
-## Run it
-
-```bash
-npm install
+```sh
+npm ci
 npm run dev
+npm run build
+npm run start
 ```
 
-Open http://localhost:3000.
+## Content and implementation
 
-## Architecture
+- `content/site/pages.json`: approved first-party page markup, metadata, ordered stylesheets, and scripts. Keys are canonical routes with trailing slashes. Supporting pages and legal documents use this source; the source is never visitor-provided HTML.
+- `components/marketing-document.tsx`: renders approved pages and initializes their animation scripts after hydration. Normal anchors intentionally perform full navigation so each page starts with a fresh animation lifecycle.
+- `app/`: thin Next route wrappers, metadata, sitemap, robots, and blog rendering.
+- `public/*.css`, `public/*.js`, `public/assets/`: approved styles, interactions, and locally hosted assets. Preserve stylesheet order.
+- `content/posts/YYYY-MM-DD-slug/index.md`: editable blog frontmatter and Markdown. Only published articles appear. Existing posts use approved abstract covers; future articles use their frontmatter cover image.
+- `lib/blog-design.ts`: applies the approved editorial template to Markdown articles and generates the blog archive. Draft filtering remains in `lib/posts.ts`.
+- `lib/constants.ts`: app and demo URL defaults. Public CTA markup uses the approved Calendly link directly.
+- `lib/site.ts`: production canonical origin; `NEXT_PUBLIC_SITE_URL` may override it for another environment.
 
-```
-app/
-  layout.tsx      Inter font + global metadata
-  page.tsx        Composes the home page from sections
-  globals.css     Swiss tokens + texture utilities
-components/
-  ui/             shadcn-style primitives (Button) — overridden for Swiss
-  primitives/     Layout primitives (Container, SectionLabel, Rule)
-  sections/       Page sections (Nav, Hero, Stats, Method, Features, Splits,
-                  Testimonials, Pricing, CTA, Footer) — one file each
-lib/
-  utils.ts        cn() helper for merging Tailwind classes
-public/           Logos
-```
+The old Swiss-style React components remain in source for historical reference but are not used by active routes. Do not restore their styling into the approved design.
 
-### Design tokens
+## Publishing
 
-Swiss palette + scales live in two places that mirror each other:
+A successful push to `main` triggers the connected Vercel production deployment. Verify the build and review all public routes before pushing. Preserve the existing security headers in `next.config.mjs` and legal wording. The approved production site is indexable; private preview source robots tags are deliberately not copied into Next metadata. Historical v1/v2 preview copies are not production routes.
 
-- **`app/globals.css`** — CSS custom properties (`--swiss-paper`, `--swiss-ink`,
-  `--swiss-muted`, `--swiss-accent`, `--swiss-border`).
-- **`tailwind.config.ts`** — exposes the same colors as Tailwind utilities
-  (`bg-swiss-ink`, `text-swiss-accent`, etc.) plus the display-size font scale
-  (`text-display-sm/md/lg`).
-
-Edit one, mirror the other. This is the single source of truth.
-
-### Texture utilities
-
-Defined as Tailwind utilities in `globals.css`. Use them on muted/paper
-surfaces — never on black or red:
-
-- `.swiss-grid-pattern` — 24×24 grid lines
-- `.swiss-dots` — 16×16 dot matrix
-- `.swiss-diagonal` — 45° stripes
-- `.swiss-noise` — local fractal noise overlay
-
-### The Button component
-
-`components/ui/button.tsx` follows the shadcn pattern (`cva` + `asChild`),
-so adding more shadcn primitives later (Input, Card, Dialog) will Just Work.
-
-Variants: `primary` (solid black, hover→red), `secondary` (white w/ black
-border, hover→inverted), `accent` (solid red), `ghost` (transparent).
-
-### Adding a new section
-
-1. Create `components/sections/your-section.tsx`.
-2. Wrap content in `<Container>`.
-3. Anchor with `<SectionLabel number="07">Your Label</SectionLabel>` and a
-   massive uppercase H2 (`text-display-sm`).
-4. Add it to `app/page.tsx`.
-
-Every section ends with `border-b-[3px] border-swiss-ink` to keep the
-horizontal grid visible across the page.
-
-## Git & deploy
-
-First-time setup (stage only what belongs in the repo — not `node_modules`,
-`.next`, or `.env.local`; see `.gitignore`):
-
-```bash
-git init   # if you haven't already
-git add app components lib content public scripts package.json package-lock.json \
-  next.config.mjs tsconfig.json tailwind.config.ts postcss.config.mjs \
-  .eslintrc.json .gitignore .env.example README.md docs .cursorrules components.json
-git status   # confirm node_modules, .next, .env.local are NOT listed
-```
-
-On Vercel (or similar), set environment variables from `.env.example` (e.g.
-`NEXT_PUBLIC_SITE_URL`). The host runs `npm install` and `npm run build` — do
-not commit `node_modules`, `.next`, or `.next-dev`.
-
-```bash
-npm run build   # verify locally before pushing
-```
-
-**Local dev CSS suddenly missing?** Dev uses `.next-dev/` and production uses
-`.next/` (see `next.config.mjs`). If styles break, run `npm run dev:clean` and
-hard-refresh the browser (⌘⇧R). Avoid running `npm run build` while `npm run dev`
-is active. Projects in **iCloud Drive** can also corrupt cache folders — prefer
-a non-iCloud path for daily development.
-
-Regenerate optimized images after changing hero or blog covers:
-
-```bash
-npm run optimize-images
-```
-
-## Notes
-
-- **No rounded corners anywhere.** That's load-bearing — it's the whole point.
-- **Color inversion on hover**, not opacity fades. Swiss interactions are bold
-  and instant (`duration-150 ease-linear`).
-- **Borders are never thinner than 2px.** Usually 3px. This is the price of
-  visible structure.
+Current demo link: https://calendly.com/noreply-useriff/30min
