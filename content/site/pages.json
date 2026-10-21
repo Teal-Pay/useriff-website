@@ -6,7 +6,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -23,7 +24,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -40,7 +42,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -57,7 +60,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -75,7 +79,8 @@
       "/customers-page.css?v=3",
       "/type-scale.css?v=1",
       "/footer-socials.css?v=1",
-      "/customer-cards.css?v=1"
+      "/customer-cards.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -90,7 +95,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -105,7 +111,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -129,7 +136,8 @@
       "/tool-consolidation.css?v=3",
       "/type-scale.css?v=1",
       "/footer-socials.css?v=1",
-      "/customer-cards.css?v=1"
+      "/customer-cards.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1",
@@ -137,8 +145,8 @@
       "/payment-story.js?v=13",
       "/deal-story.js?v=8",
       "/campaign-bridge.js?v=3",
-      "/hero-magnetic.js?v=4",
-      "/tool-consolidation.js?v=4"
+      "/hero-magnetic.js?v=5",
+      "/tool-consolidation.js?v=5"
     ],
     "className": "",
     "body": "<a class=\"skip-link\" href=\"#main\">Skip to content</a>\n<header class=\"site-header\"><a aria-label=\"Riff home\" class=\"wordmark\" href=\"/\"><img alt=\"Riff\" height=\"40\" src=\"/assets/riff-logo.svg\" width=\"106\"/></a><nav aria-label=\"Main navigation\" class=\"desktop-nav\"><a href=\"/#overview\">How it works</a><a href=\"/customers/\">Customers</a><a href=\"/pricing/\">Pricing</a><a href=\"/faq/\">FAQs</a><a href=\"/blog/\">Blog</a></nav><div class=\"nav-actions\"><a class=\"login\" href=\"https://lets.useriff.app/signin\" rel=\"noopener\" target=\"_blank\">Sign in</a><a class=\"button nav-signup\" href=\"https://lets.useriff.app/\" rel=\"noopener\" target=\"_blank\">Sign up</a><a class=\"button dark nav-demo\" href=\"https://calendly.com/noreply-useriff/30min\" rel=\"noopener\" target=\"_blank\">Book a demo</a><button aria-controls=\"mobile-nav\" aria-expanded=\"false\" aria-label=\"Open navigation\" class=\"menu-toggle\"><span></span><span></span></button></div><nav aria-label=\"Mobile navigation\" hidden=\"\" id=\"mobile-nav\"><a href=\"/#overview\">How it works</a><a href=\"/customers/\">Customers</a><a href=\"/pricing/\">Pricing</a><a href=\"/faq/\">FAQs</a><a href=\"/blog/\">Blog</a><div class=\"mobile-nav-actions\"><a href=\"https://lets.useriff.app/signin\" rel=\"noopener\" target=\"_blank\">Sign in</a><a href=\"https://lets.useriff.app/\" rel=\"noopener\" target=\"_blank\">Sign up</a><a href=\"https://calendly.com/noreply-useriff/30min\" rel=\"noopener\" target=\"_blank\">Book a demo</a></div></nav></header>\n<main id=\"main\">\n<section aria-labelledby=\"hero-title\" class=\"hero\"><div class=\"container hero-layout\">\n<div class=\"hero-inner\"><h1 id=\"hero-title\"><span>Run every</span> <span>creator deal from</span> <span>inbox to 1099</span></h1><p class=\"hero-description\">Riff is the operating system for talent managers. Manage your creators' brand emails, deal progress, and payments all in one place.</p><div class=\"hero-buttons\"><a class=\"button dark\" href=\"https://calendly.com/noreply-useriff/30min\" rel=\"noopener\" target=\"_blank\">Book a demo</a></div></div>\n<div aria-label=\"Brand emails, deals, contracts, deliverables, invoices, and creator payouts connected around Riff, gently attracted by your cursor\" class=\"hero-magnetic\" role=\"img\"><svg aria-hidden=\"true\" class=\"magnetic-lines\"><path></path><path></path><path></path><path></path><path></path><path></path></svg><div aria-hidden=\"true\" class=\"magnetic-core\"><img alt=\"\" src=\"/assets/riff-logo.svg\"/><strong>Every deal, connected</strong><span>Inboxes <i></i> Deals <i></i> Payments</span></div><div aria-hidden=\"true\" class=\"magnetic-nodes\"><div class=\"magnetic-node\" data-node=\"0\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.7\" viewbox=\"0 0 28 28\"><rect height=\"18\" rx=\"4\" width=\"22\" x=\"3\" y=\"5\"></rect><path d=\"m4 7 10 8L24 7\"></path></svg><span><strong>Brand emails</strong><small>Gmail · Outlook</small></span></div><div class=\"magnetic-node\" data-node=\"1\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.7\" viewbox=\"0 0 28 28\"><rect height=\"14\" rx=\"2\" width=\"6\" x=\"3\" y=\"4\"></rect><rect height=\"20\" rx=\"2\" width=\"6\" x=\"11\" y=\"4\"></rect><rect height=\"10\" rx=\"2\" width=\"6\" x=\"19\" y=\"4\"></rect></svg><span><strong>Deal pipeline</strong><small>Stages · Next steps</small></span></div><div class=\"magnetic-node\" data-node=\"2\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.7\" viewbox=\"0 0 28 28\"><path d=\"M17 4H5v21h17V13M12 17l2-5 8-8 3 3-9 8Z M9 21h7\"></path></svg><span><strong>Contracts</strong><small>Terms · Signatures</small></span></div><div class=\"magnetic-node\" data-node=\"3\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.7\" viewbox=\"0 0 28 28\"><rect height=\"20\" rx=\"3\" width=\"22\" x=\"3\" y=\"4\"></rect><path d=\"m12 9 7 5-7 5Z\"></path></svg><span><strong>Deliverables</strong><small>Content · Deadlines</small></span></div><div class=\"magnetic-node\" data-node=\"4\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.7\" viewbox=\"0 0 28 28\"><path d=\"M6 3h16v23l-4-2-4 2-4-2-4 2Z M10 9h8M10 14h8M10 19h5\"></path></svg><span><strong>Invoices</strong><small>Brands · Follow-ups</small></span></div><div class=\"magnetic-node\" data-node=\"5\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.7\" viewbox=\"0 0 28 28\"><path d=\"M3 14h21m-6-6 6 6-6 6\"></path><circle cx=\"7\" cy=\"7\" r=\"3\"></circle></svg><span><strong>Creator payouts</strong><small>Creators · Agency</small></span></div></div></div></div></section>\n<section aria-label=\"Riff customers\" class=\"proof logo-marquees\" data-paused=\"false\"><div class=\"container proof-inner\"><div class=\"proof-rows\"><div class=\"logo-row agencies-row\"><div aria-label=\"Agencies on Riff logos\" class=\"logo-viewport\" role=\"region\" tabindex=\"0\"><div class=\"logo-track\"><ul class=\"logo-group\"><li><img alt=\"Reach\" decoding=\"async\" height=\"36\" src=\"/assets/riff-reach.png\" width=\"140\"/></li><li><img alt=\"Slay\" decoding=\"async\" height=\"36\" src=\"/assets/riff-slay.png\" width=\"140\"/></li><li><img alt=\"Greenwood Management\" decoding=\"async\" height=\"36\" src=\"/assets/riff-greenwood-management.avif\" width=\"140\"/></li><li><img alt=\"Starline Management\" decoding=\"async\" height=\"36\" src=\"/assets/riff-starline-management.png\" width=\"140\"/></li><li><img alt=\"Vortex\" decoding=\"async\" height=\"36\" src=\"/assets/riff-vortex.png\" width=\"140\"/></li><li><img alt=\"Coco Butter\" decoding=\"async\" height=\"36\" src=\"/assets/riff-coco-butter.png\" width=\"140\"/></li></ul><ul aria-hidden=\"true\" class=\"logo-group\"><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-reach.png\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-slay.png\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-greenwood-management.avif\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-starline-management.png\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-vortex.png\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-coco-butter.png\" width=\"140\"/></li></ul></div></div></div><div class=\"logo-row brands-row\"><div aria-label=\"Brands paying through Riff logos\" class=\"logo-viewport\" role=\"region\" tabindex=\"0\"><div class=\"logo-track\"><ul class=\"logo-group\"><li><img alt=\"L'Oréal\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-l-or-al.svg\" width=\"140\"/></li><li><img alt=\"Invisalign\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-invisalign.png\" width=\"140\"/></li><li><img alt=\"Omnicom\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-omnicom.png\" width=\"140\"/></li><li><img alt=\"GoFundMe\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-gofundme.svg\" width=\"140\"/></li><li><img alt=\"Skinfix\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-skinfix.svg\" width=\"140\"/></li><li><img alt=\"Head &amp; Shoulders\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-head-shoulders.svg\" width=\"140\"/></li><li><img alt=\"Cosnori\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-cosnori.webp\" width=\"140\"/></li><li><img alt=\"Dr Althea\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-dr-althea.avif\" width=\"140\"/></li></ul><ul aria-hidden=\"true\" class=\"logo-group\"><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-l-or-al.svg\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-invisalign.png\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-omnicom.png\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-gofundme.svg\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-skinfix.svg\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-head-shoulders.svg\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-cosnori.webp\" width=\"140\"/></li><li><img alt=\"\" decoding=\"async\" height=\"36\" src=\"/assets/riff-brand-dr-althea.avif\" width=\"140\"/></li></ul></div></div></div></div></div></section>\n<section aria-labelledby=\"stack-title\" class=\"section stack-section\" id=\"connected-workflow\"><div class=\"container\"><div class=\"section-heading\"><h2 id=\"stack-title\">Bring your work into one place</h2><div class=\"section-description\"><p>From brand emails to creator payouts, manage the work scattered across separate tools in Riff.</p></div></div><div aria-label=\"Work spread across separate tools gathers into Riff: inboxes, deals, invoices, and payouts in one platform.\" class=\"consolidation-scene\" role=\"img\"><ul class=\"consolidation-cloud\"><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-3deg;--chip-lift:0px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/notion.svg\" width=\"24\"/><span>Notion</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:2deg;--chip-lift:-7px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/foam.png\" width=\"24\"/><span>Foam</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-1deg;--chip-lift:4px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/paypal.svg\" width=\"24\"/><span>PayPal</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:3deg;--chip-lift:-3px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/gmail.svg\" width=\"24\"/><span>Gmail</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-3deg;--chip-lift:0px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/hubspot.svg\" width=\"24\"/><span>HubSpot</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:2deg;--chip-lift:-7px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/stripe.svg\" width=\"24\"/><span>Stripe</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-1deg;--chip-lift:4px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/googlecalendar.svg\" width=\"24\"/><span>Google Calendar</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-2deg;--chip-lift:6px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/airtable.svg\" width=\"24\"/><span>Airtable</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:2deg;--chip-lift:-7px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/quickbooks.svg\" width=\"24\"/><span>QuickBooks</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-1deg;--chip-lift:4px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/modash.png\" width=\"24\"/><span>Modash</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:3deg;--chip-lift:-3px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/googlesheets.svg\" width=\"24\"/><span>Google Sheets</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-2deg;--chip-lift:6px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/tipalti.ico\" width=\"24\"/><span>Tipalti</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-3deg;--chip-lift:0px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/streak.svg\" width=\"24\"/><span>Streak</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-1deg;--chip-lift:4px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/bill.png\" width=\"24\"/><span>BILL</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-2deg;--chip-lift:6px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/venmo.svg\" width=\"24\"/><span>Venmo</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-2deg;--chip-lift:4px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/mercury.svg\" width=\"24\"/><span>Mercury</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:3deg;--chip-lift:-3px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/brex.ico\" width=\"24\"/><span>Brex</span></li><li class=\"compare-tool has-logo\" style=\"--chip-tilt:-1deg;--chip-lift:5px\"><img alt=\"\" height=\"24\" loading=\"eager\" src=\"/assets/tools/googledrive.svg\" width=\"24\"/><span>Google Drive</span></li></ul><div class=\"consolidation-home\"><div class=\"consolidation-riff\"><img alt=\"Riff\" height=\"54\" src=\"/assets/riff-logo.svg\" width=\"140\"/><p>Your one-stop talent operating system</p><ul><li>Inboxes</li><li>Deals</li><li>Invoices</li><li>Payouts</li></ul></div></div></div></div>\n</section>\n<section class=\"section story-section inbox-feature\" id=\"overview\"><div class=\"container inbox-layout\"><div class=\"inbox-content\"><div class=\"section-heading\"><h2>Manage every creator’s inbox in one place</h2><div class=\"section-description\"><p>Read and reply to brand emails for your whole roster, without switching accounts.</p></div></div>\n<div aria-label=\"Maya, Jordan, and Ava’s separate inboxes merge into one Riff inbox, with each brand conversation linked to its creator.\" class=\"inbox-merge-scene inbox-story\" role=\"img\">\n<div aria-hidden=\"true\" class=\"separate-inboxes\"><div class=\"source-inbox source-maya\"><div class=\"source-account\"><span class=\"creator-orb creator-maya\">ME</span><div><strong>Maya Ellis</strong><span>maya@creatormail.co</span></div><img alt=\"\" height=\"22\" src=\"/assets/tools/gmail.svg\" width=\"22\"/></div><div class=\"source-message\"><strong>Studio June<i></i></strong><span>Can Maya share her draft on Friday?</span></div><div class=\"source-message\"><strong>Common Ground</strong><span>Your agreement is ready</span></div></div><div class=\"source-inbox source-jordan\"><div class=\"source-account\"><span class=\"creator-orb creator-jordan\">JP</span><div><strong>Jordan Park</strong><span>jordan@creatormail.co</span></div><img alt=\"\" height=\"22\" src=\"/assets/tools/gmail.svg\" width=\"22\"/></div><div class=\"source-message\"><strong>Field Notes<i></i></strong><span>Could you share Jordan’s rate?</span></div><div class=\"source-message\"><strong>Form Studio</strong><span>Summer campaign</span></div></div><div class=\"source-inbox source-ava\"><div class=\"source-account\"><span class=\"creator-orb creator-ava\">AT</span><div><strong>Ava Torres</strong><span>ava@creatormail.co</span></div><img alt=\"\" height=\"22\" src=\"/assets/tools/gmail.svg\" width=\"22\"/></div><div class=\"source-message\"><strong>Daybreak<i></i></strong><span>Ava’s latest draft is approved.</span></div><div class=\"source-message\"><strong>Still Life</strong><span>Next month’s launch</span></div></div></div>\n<div aria-hidden=\"true\" class=\"merged-inbox email-inbox\"><aside class=\"email-sidebar\"><img alt=\"\" src=\"/assets/riff-logo.svg\"/><div class=\"mail-folders\"><div class=\"mail-folder active\"><svg fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m3 4-2 8v4h18v-4l-2-8H3ZM1 12h5l2 3h4l2-3h5\"></path></svg><span>Inbox</span><b>3</b></div><div class=\"mail-folder\"><svg fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m2 9 16-7-7 16-2-7-7-2Zm7 2 9-9\"></path></svg><span>Sent</span></div><div class=\"mail-folder\"><svg fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"M5 2h7l4 4v12H5V2Zm7 0v5h4M8 11h5M8 14h5\"></path></svg><span>Drafts</span></div></div><div class=\"email-accounts\"><span>Creators</span><div><i class=\"creator-dot creator-maya\"></i>Maya Ellis</div><div><i class=\"creator-dot creator-jordan\"></i>Jordan Park</div><div><i class=\"creator-dot creator-ava\"></i>Ava Torres</div></div></aside><div class=\"email-main\"><div class=\"email-header\"><img alt=\"\" src=\"/assets/riff-logo.svg\"/><strong>All inboxes</strong><span>3 accounts</span></div><div class=\"email-messages\"><div class=\"mail-row unread\"><span class=\"mail-select\"></span><svg class=\"mail-star\" fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m10 2 2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L2.2 7.7l5.4-.8L10 2Z\"></path></svg><strong class=\"mail-sender\">Studio June</strong><span class=\"mail-subject\">Everyday Edit</span><span class=\"creator-tag creator-maya\">Maya</span><time>10:42</time></div><div class=\"mail-row unread\"><span class=\"mail-select\"></span><svg class=\"mail-star\" fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m10 2 2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L2.2 7.7l5.4-.8L10 2Z\"></path></svg><strong class=\"mail-sender\">Field Notes</strong><span class=\"mail-subject\">New partnership</span><span class=\"creator-tag creator-jordan\">Jordan</span><time>10:18</time></div><div class=\"mail-row unread\"><span class=\"mail-select\"></span><svg class=\"mail-star\" fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m10 2 2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L2.2 7.7l5.4-.8L10 2Z\"></path></svg><strong class=\"mail-sender\">Daybreak</strong><span class=\"mail-subject\">Morning Ritual</span><span class=\"creator-tag creator-ava\">Ava</span><time>9:56</time></div><div class=\"mail-row\"><span class=\"mail-select\"></span><svg class=\"mail-star\" fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m10 2 2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L2.2 7.7l5.4-.8L10 2Z\"></path></svg><strong class=\"mail-sender\">Common Ground</strong><span class=\"mail-subject\">Your agreement is ready</span><span class=\"creator-tag creator-maya\">Maya</span><time>Yesterday</time></div><div class=\"mail-row\"><span class=\"mail-select\"></span><svg class=\"mail-star\" fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m10 2 2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L2.2 7.7l5.4-.8L10 2Z\"></path></svg><strong class=\"mail-sender\">Form Studio</strong><span class=\"mail-subject\">Summer campaign</span><span class=\"creator-tag creator-jordan\">Jordan</span><time>Yesterday</time></div><div class=\"mail-row\"><span class=\"mail-select\"></span><svg class=\"mail-star\" fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m10 2 2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L2.2 7.7l5.4-.8L10 2Z\"></path></svg><strong class=\"mail-sender\">Still Life</strong><span class=\"mail-subject\">Next month’s launch</span><span class=\"creator-tag creator-ava\">Ava</span><time>Mon</time></div></div></div></div></div></div></div></section>\n<section aria-labelledby=\"bridge-title\" class=\"campaign-bridge\" id=\"email-to-campaign\"><div class=\"container\">\n<div class=\"section-heading\"><h2 id=\"bridge-title\">Turn brand emails into campaigns, without retyping</h2><div class=\"section-description\"><p>Turn agreed terms into a deal, ready for your review.</p></div></div>\n<figure aria-label=\"Details from a Studio June email carry into a deal ready for review: Maya Ellis, $8,000, one Instagram Reel, 30 days of organic usage, draft November 4 and publication November 8.\" class=\"deal-bridge\">\n<div aria-hidden=\"true\" class=\"bridge-grid\">\n<article class=\"bridge-card bridge-email\"><div class=\"bridge-card-label\"><span class=\"bridge-mail-icon\"><svg fill=\"none\" viewbox=\"0 0 24 24\"><path d=\"M4 6h16v12H4zM4 7l8 6 8-6\"></path></svg></span>Brand email</div><div class=\"bridge-sender\"><span class=\"bridge-monogram\">sj.</span><strong>Studio June</strong></div><h3>Everyday Edit — confirmed</h3><p>Confirmed for <mark data-term=\"creator\">Maya Ellis</mark>:<br/><mark data-term=\"rate\">$8,000</mark> for <mark data-term=\"deliverable\">1 Instagram Reel</mark>.</p><p><mark data-term=\"usage\">30 days · Organic</mark> usage.<br/><mark data-term=\"dates\">Draft Nov 4 · Live Nov 8</mark>.</p></article>\n<article class=\"bridge-card bridge-record\"><div class=\"bridge-card-label\"><img alt=\"\" src=\"/assets/riff-symbol.svg\"/>Deal details</div><h3>Everyday Edit</h3><dl class=\"bridge-fields\"><div data-field=\"creator\"><dt>Creator</dt><dd><span>Maya Ellis</span></dd></div><div data-field=\"rate\"><dt>Rate</dt><dd><span>$8,000</span></dd></div><div data-field=\"deliverable\"><dt>Deliverable</dt><dd><span>1 Instagram Reel</span></dd></div><div data-field=\"usage\"><dt>Usage</dt><dd><span>30 days · Organic</span></dd></div><div data-field=\"dates\"><dt>Dates</dt><dd><span>Draft Nov 4 · Live Nov 8</span></dd></div></dl><div class=\"bridge-reviewed\"><svg fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m5 10 3 3 7-7\"></path></svg><span>Ready for review</span></div></article>\n</div></figure></div></section>\n<section class=\"section deals-feature\" id=\"how-it-works\"><div class=\"container\"><div class=\"section-heading\"><h2>Know what every deal needs next</h2><div class=\"section-description\"><p>See who you’re waiting on, what’s due next, and which deals need your attention.</p></div></div><div class=\"pipeline-shell\"><div aria-label=\"Five creator deals organized from negotiation to published\" class=\"kanban-board\"><div class=\"kanban-column\"><h3><i aria-hidden=\"true\" class=\"stage-dot dot-blue\"></i>Negotiation<span>2</span></h3><div class=\"kanban-cards\"><article class=\"deal-card\" data-deal=\"Field Notes\"><div class=\"deal-card-top\"><h4>Field Notes</h4><strong class=\"deal-value\">$2,250</strong></div><div class=\"deal-creator\"><span aria-hidden=\"true\" class=\"person-avatar avatar-blue\">JP</span>Jordan Park</div><div class=\"deal-next\"><p class=\"deal-action\">Review offer</p></div></article><article class=\"deal-card\" data-deal=\"Form Studio\"><div class=\"deal-card-top\"><h4>Form Studio</h4><strong class=\"deal-value\">$4,000</strong></div><div class=\"deal-creator\"><span aria-hidden=\"true\" class=\"person-avatar avatar-lilac\">NC</span>Nina Chen</div><div class=\"deal-next\"><p class=\"deal-action\">Confirm rate</p></div></article></div></div><div class=\"kanban-column\"><h3><i aria-hidden=\"true\" class=\"stage-dot dot-lilac\"></i>Contract<span>1</span></h3><div class=\"kanban-cards\"><article class=\"deal-card deal-focus\" data-deal=\"Daybreak\"><div class=\"deal-card-top\"><h4>Daybreak</h4><strong class=\"deal-value\">$3,500</strong></div><div class=\"deal-creator\"><span aria-hidden=\"true\" class=\"person-avatar avatar-mint\">AT</span>Ava Torres</div><div class=\"deal-next\"><p class=\"deal-action\">Review contract</p></div></article></div></div><div class=\"kanban-column\"><h3><i aria-hidden=\"true\" class=\"stage-dot dot-sand\"></i>Content<span>1</span></h3><div class=\"kanban-cards\"><article class=\"deal-card\" data-deal=\"Common Ground\"><div class=\"deal-card-top\"><h4>Common Ground</h4><strong class=\"deal-value\">$5,000</strong></div><div class=\"deal-creator\"><span aria-hidden=\"true\" class=\"person-avatar avatar-sand\">LW</span>Leo Williams</div><div class=\"deal-next\"><p class=\"deal-action\">Review draft</p></div></article></div></div><div class=\"kanban-column\"><h3><i aria-hidden=\"true\" class=\"stage-dot dot-mint\"></i>Published<span>1</span></h3><div class=\"kanban-cards\"><article class=\"deal-card is-published\" data-deal=\"Studio June\"><div class=\"deal-card-top\"><h4>Studio June</h4><strong class=\"deal-value\">$8,000</strong></div><div class=\"deal-creator\"><span aria-hidden=\"true\" class=\"person-avatar avatar-lilac\">ME</span>Maya Ellis</div><div class=\"deal-next\"><p class=\"deal-action\">Send invoice</p></div></article></div></div></div></div></div></section><section class=\"section payments-feature\" id=\"payments\"><div class=\"container\"><div class=\"section-heading\"><h2>Automate invoice follow-ups and creator payouts</h2><div class=\"section-description\"><p>Riff follows up on invoices, collects W‑9s and W‑8s, and handles domestic and international payouts. Set flexible splits for creator earnings, manager commissions, and agency fees across flat-fee, performance-based, and usage-rights deals. Approve splits upfront; payouts run automatically once brand funds clear.</p></div></div>\n<figure aria-label=\"With agency-approved splits in place, a $20,000 Studio June payment clears in Riff, then automatically pays $8,000 to Maya, $6,000 to Jordan, $4,000 to Ava, and $2,000 to the agency. Creator W-9s are collected before payouts.\" class=\"payout-flow payment-scene\" role=\"img\">\n<div aria-hidden=\"true\" class=\"payout-map\"><svg class=\"payout-lines\" fill=\"none\"></svg>\n<div class=\"brand-payment\"><div class=\"brand-payment-top\"><span class=\"brand-monogram\">sj.</span><div><strong>Studio June</strong></div></div><strong class=\"brand-payment-amount\">$20,000</strong><span class=\"brand-status\">Brand funds cleared</span><div class=\"reminder-note\"><span class=\"reminder-icon\"><svg fill=\"none\" viewbox=\"0 0 24 24\"><path d=\"M4 6h16v12H4zM4 7l8 6 8-6\"></path></svg></span><div><strong>Payment reminder sent</strong></div><span class=\"reminder-check\"><svg fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m5 10 3 3 7-7\"></path></svg></span></div></div>\n<div class=\"payout-hub\"><div class=\"hub-orbit\"></div><img alt=\"\" src=\"/assets/riff-logo.svg\"/><span class=\"hub-payment-label\">Payment distributed</span><strong class=\"hub-payment-total\">$20,000</strong><span class=\"hub-payment-state\"><i></i>Splits approved upfront</span></div>\n<div class=\"payout-people\"><div class=\"payout-person\"><span class=\"person-avatar avatar-lilac\">ME</span><div class=\"recipient-copy\"><strong>Maya Ellis</strong><span class=\"tax-status\">W‑9 on file</span></div><div class=\"recipient-money\"><strong>$8,000</strong><span class=\"recipient-status\">Paid</span></div><span class=\"transfer-check\"><svg fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m5 10 3 3 7-7\"></path></svg></span></div><div class=\"payout-person\"><span class=\"person-avatar avatar-mint\">JP</span><div class=\"recipient-copy\"><strong>Jordan Park</strong><span class=\"tax-status\">W‑9 on file</span></div><div class=\"recipient-money\"><strong>$6,000</strong><span class=\"recipient-status\">Paid</span></div><span class=\"transfer-check\"><svg fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m5 10 3 3 7-7\"></path></svg></span></div><div class=\"payout-person\"><span class=\"person-avatar avatar-blue\">AT</span><div class=\"recipient-copy\"><strong>Ava Torres</strong><span class=\"tax-status\">W‑9 on file</span></div><div class=\"recipient-money\"><strong>$4,000</strong><span class=\"recipient-status\">Paid</span></div><span class=\"transfer-check\"><svg fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m5 10 3 3 7-7\"></path></svg></span></div><div class=\"payout-person\"><span class=\"person-avatar avatar-sand\">R</span><div class=\"recipient-copy\"><strong>Your agency</strong><span class=\"tax-status\">Agency commission</span></div><div class=\"recipient-money\"><strong>$2,000</strong><span class=\"recipient-status\">Paid</span></div><span class=\"transfer-check\"><svg fill=\"none\" viewbox=\"0 0 20 20\"><path d=\"m5 10 3 3 7-7\"></path></svg></span></div></div></div></figure></div></section>\n<!-- Customer quote excerpt published at https://www.useriff.app/ (reviewed 2026-10-17). -->\n<section aria-labelledby=\"customers-title\" class=\"customer-proof section\" id=\"customers\"><div class=\"container\"><div class=\"section-heading\"><h2 id=\"customers-title\">What our customers say about Riff</h2></div><div class=\"customer-stories\">\n<figure class=\"customer-story customer-story-reach customer-quote-card\"><div class=\"customer-logo customer-quote-logo\"><img alt=\"Reach Management\" height=\"59\" loading=\"lazy\" src=\"/assets/riff-reach.png\" width=\"152\"/></div><blockquote cite=\"https://www.useriff.app/\">“In one click, we just paid out <strong>62 creators, 4 agencies, and 12 talent managers.</strong> That endless back-and-forth of chasing invoices, due dates, and W-9s is completely eliminated from our communications.”</blockquote><figcaption><strong>Dylan Huey</strong><span>CEO, Reach Management</span></figcaption></figure>\n<figure class=\"customer-story customer-story-starline customer-quote-card\"><div class=\"customer-logo customer-quote-logo\"><img alt=\"Starline Management\" height=\"59\" loading=\"lazy\" src=\"/assets/riff-starline-management.png\" width=\"236\"/></div><blockquote cite=\"https://www.useriff.app/\">“We just drop our campaign contract in, and <strong>Riff handles everything else</strong> from the brand invoice down to the final creator payout. It's the easiest way to protect our roster and keep things moving.”</blockquote><figcaption><strong>William Lee</strong><span>CEO, Starline Management</span></figcaption></figure>\n</div></div></section>\n<section class=\"closing\" id=\"demo\"><div class=\"container\"><h2>Run your roster with less chasing</h2><p>See how your team can stay on top of brand replies, deal deadlines, and creator payouts in Riff.</p><div class=\"hero-buttons\"><a class=\"button dark\" href=\"https://calendly.com/noreply-useriff/30min\" rel=\"noopener\" target=\"_blank\">Book a demo</a></div></div></section>\n</main><footer><div class=\"container footer-top\"><a aria-label=\"Riff home\" class=\"wordmark\" href=\"/\"><img alt=\"Riff\" height=\"40\" src=\"/assets/riff-logo.svg\" width=\"106\"/></a><nav aria-label=\"Footer navigation\"><a href=\"/#overview\">Platform</a><a href=\"/payments/\">Payments</a><a href=\"/pricing/\">Pricing</a><a href=\"/faq/\">FAQs</a><a href=\"mailto:info@useriff.app\">Contact</a></nav></div><div class=\"container footer-bottom\"><span>© 2026 Teal Pay Global Inc.</span><nav aria-label=\"Social media\" class=\"footer-social-links\"><a href=\"https://www.linkedin.com/company/useriffapp/\" rel=\"noopener\" target=\"_blank\">LinkedIn</a><a href=\"https://www.instagram.com/useriff.app/\" rel=\"noopener\" target=\"_blank\">Instagram</a><a href=\"https://www.tiktok.com/@useriff.app\" rel=\"noopener\" target=\"_blank\">TikTok</a><a href=\"https://www.youtube.com/@useriff_app\" rel=\"noopener\" target=\"_blank\">YouTube</a></nav><div><a href=\"/pages/privacy-policy/\">Privacy</a><a href=\"/pages/terms-of-service/\">Terms</a><a href=\"/pages/legal/\">Legal</a></div></div></footer>\n<div aria-live=\"polite\" class=\"sr-only\" id=\"announcements\"></div>\n"
@@ -150,7 +158,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -165,7 +174,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -180,7 +190,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -195,7 +206,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -210,7 +222,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -225,7 +238,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -240,7 +254,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -255,7 +270,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -270,7 +286,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -285,7 +302,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"
@@ -303,7 +321,8 @@
       "/art-direction.css?v=21",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1",
@@ -319,7 +338,8 @@
       "/riff.css?v=9",
       "/site-pages.css?v=2",
       "/type-scale.css?v=1",
-      "/footer-socials.css?v=1"
+      "/footer-socials.css?v=1",
+      "/mobile-illustrations.css?v=1"
     ],
     "scripts": [
       "/navigation.js?v=1"

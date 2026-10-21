@@ -2,6 +2,7 @@
   const scene=document.querySelector('.hero-magnetic');
   if(!scene)return;
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  const compact=matchMedia('(max-width:800px)');
   const paths=[...scene.querySelectorAll('.magnetic-lines path')];
   const nodes=[...scene.querySelectorAll('.magnetic-node')].map((el,i)=>({el,path:paths[i],x:0,y:0,tx:0,ty:0,vx:0,vy:0,w:0,h:0}));
   let pointer=null,raf=0,visible=false,previous=0,width=0,height=0;
@@ -31,7 +32,7 @@
   }
   const tilts=[-9,4,10,9,4,-8];
   function base(i){
-    const positions=width<520?[[.25,.16],[.75,.16],[.75,.31],[.75,.83],[.25,.83],[.25,.31]]:[[.17,.24],[.5,.19],[.83,.24],[.83,.76],[.5,.83],[.17,.76]];
+    const positions=compact.matches?[[.25,.11],[.75,.11],[.75,.29],[.75,.86],[.25,.86],[.25,.29]]:width<520?[[.25,.16],[.75,.16],[.75,.31],[.75,.83],[.25,.83],[.25,.31]]:[[.17,.24],[.5,.19],[.83,.24],[.83,.76],[.5,.83],[.17,.76]];
     return {x:width*positions[i][0],y:height*positions[i][1]};
   }
   function goals(){
@@ -45,7 +46,7 @@
   }
   function draw(){nodes.forEach((n,i)=>{
     n.el.style.transform=`translate3d(${n.x-n.w/2}px,${n.y-n.h/2}px,0) rotate(${tilts[i]+n.vx*.2}deg)`;
-    n.path.setAttribute('d',`M ${width/2} ${height*.51} Q ${width/2+(n.x-width/2)*.23} ${n.y} ${n.x} ${n.y}`);
+    n.path.setAttribute('d',`M ${width/2} ${height*(compact.matches?.55:.51)} Q ${width/2+(n.x-width/2)*.23} ${n.y} ${n.x} ${n.y}`);
   });}
   function tick(now){
     const dt=previous?Math.min((now-previous)/16.667,2):1;previous=now;goals();let moving=false;

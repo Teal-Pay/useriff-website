@@ -6,6 +6,7 @@
   const home=scene.querySelector('.consolidation-riff');
   const features=[...home.querySelectorAll('li')];
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  const compact=matchMedia('(max-width:800px)');
   const clamp=n=>Math.max(0,Math.min(1,n));
   const ease=n=>{n=clamp(n);return n*n*(3-2*n)};
   const animationEnd=3050,replayDelay=2000;
@@ -28,6 +29,7 @@
     const playhead=elapsed>=resetAt ? 0 : elapsed;
     const opacity=elapsed<restartAt ? 1 : elapsed<resetAt ? 1-ease((elapsed-restartAt)/200) : ease((elapsed-resetAt)/250);
     scene.style.setProperty('--scene-opacity',opacity);
+    scene.style.setProperty('--home-opacity',compact.matches&&!reduced.matches?ease((playhead-1500)/1000):1);
     let arrived=0;
     chips.forEach((chip,i)=>{
       const p=ease((playhead-1300-i*24)/1200),move=p;
