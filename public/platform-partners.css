@@ -27,11 +27,13 @@
 }
 
 .platform-partners-logos {
-  display: flex;
+  --partner-logo-height: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: center;
-  justify-content: center;
-  gap: clamp(40px, 7vw, 90px);
-  margin: 0;
+  max-width: 600px;
+  gap: 32px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -40,18 +42,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 130px;
-  height: 36px;
+  min-width: 0;
+  height: 40px;
 }
 
 .platform-partners-logos img {
   width: auto;
-  height: auto;
-  max-width: 130px;
-  max-height: 32px;
+  height: var(--partner-logo-height);
+  max-width: 100%;
   object-fit: contain;
   filter: grayscale(1);
   opacity: .88;
+}
+
+/* Align the lettering optically: Google's g descends below its baseline,
+   while TikTok's note extends above its wordmark. Preserve each aspect ratio. */
+.platform-partners-logos img[alt="Google"] {
+  height: calc(var(--partner-logo-height) * 1.14);
+  transform: translateY(calc(var(--partner-logo-height) * .16));
+}
+
+.platform-partners-logos img[alt="TikTok"] {
+  height: calc(var(--partner-logo-height) * 1.07);
+  transform: translateY(calc(var(--partner-logo-height) * -.06));
 }
 
 @media (max-width: 800px) {
@@ -72,17 +85,7 @@
   }
 
   .platform-partners-logos {
-    gap: 24px;
-  }
-
-  .platform-partners-logos li {
-    width: 84px;
-    height: 28px;
-    min-width: 0;
-  }
-
-  .platform-partners-logos img {
-    max-width: 100%;
-    max-height: 26px;
+    --partner-logo-height: clamp(18px, 5.65vw, 22px);
+    gap: 16px;
   }
 }
