@@ -1,0 +1,88 @@
+/* Customer and partner logos share one uninterrupted white surface. */
+.proof.logo-marquees {
+  border-bottom: 0;
+  padding-bottom: 36px;
+}
+
+.platform-partners {
+  background: #fff;
+}
+
+.platform-partners-inner {
+  padding-block: 34px 72px;
+  text-align: center;
+}
+
+/* Shared labels distinguish the two groups without adding display headings. */
+.platform-partners .proof-label,
+.proof .proof-label {
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-family: Geist, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 450;
+  line-height: 1.5;
+  letter-spacing: -.01em;
+  text-align: center;
+}
+
+.platform-partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(40px, 7vw, 90px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.platform-partners-logos li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 36px;
+}
+
+.platform-partners-logos img {
+  width: auto;
+  height: auto;
+  max-width: 130px;
+  max-height: 32px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: .88;
+}
+
+@media (max-width: 800px) {
+  .platform-partners .proof-label,
+  .proof .proof-label {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 540px) {
+  .platform-partners-inner {
+    padding-block: 28px 56px;
+  }
+
+  .platform-partners .proof-label,
+  .proof .proof-label {
+    margin-bottom: 24px;
+  }
+
+  .platform-partners-logos {
+    gap: 24px;
+  }
+
+  .platform-partners-logos li {
+    width: 84px;
+    height: 28px;
+    min-width: 0;
+  }
+
+  .platform-partners-logos img {
+    max-width: 100%;
+    max-height: 26px;
+  }
+}

@@ -2,7 +2,7 @@
 
 ## Homepage
 
-Hero → agency and brand logo rows → tool consolidation → unified inbox → email-to-campaign → deal pipeline → payments → Reach and Starline quotes → charcoal demo CTA → footer.
+Hero → Agencies and brands on Riff logo rows → Partners logo row → tool consolidation → unified inbox → email-to-campaign → deal pipeline → payments → Reach and Starline quotes → charcoal demo CTA → footer.
 
 The message is customer-led: manage creator deals from inbox to 1099, bring scattered work together, see the next action, and automate financial follow-through. Product demonstrations show work moving forward rather than recreating every detail of the application.
 
